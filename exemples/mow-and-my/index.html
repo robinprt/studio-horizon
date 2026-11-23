@@ -1024,7 +1024,7 @@ function applyCmsContent(content) {
 
 async function loadCmsContent() {
   try {
-    const response = await fetch(`/content/site.json?v=${Date.now()}`, {
+    const response = await fetch(`content/site.json?v=${Date.now()}`, {
       cache: 'no-store',
       headers: { 'Cache-Control': 'no-cache' }
     });

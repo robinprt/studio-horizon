@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================== */
     const loadDynamicSiteContent = async () => {
         try {
-            const response = await fetch('/api/get-site-content');
+            const response = await Promise.resolve({ json: async () => ({ success: false }) }) /* démo : pas de base de données */;
             const data = await response.json();
 
             if (!data.success) {
@@ -837,7 +837,7 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================== */
     const actualitesGrid = document.getElementById('actualitesGrid');
     if (actualitesGrid) {
-        fetch('/api/get-site-content')
+        Promise.resolve({ json: async () => ({ success: false }) }) /* démo : pas de base de données */
             .then(r => r.json())
             .then(data => {
                 const loading = document.getElementById('actualitesLoading');

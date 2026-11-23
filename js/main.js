@@ -77,20 +77,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- NAVIGATION STICKY (Fallback scroll listener) ----
     const nav = document.getElementById('nav');
     if (nav) {
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 60);
-        }, { passive: true });
+        nav.classList.toggle('scrolled', window.scrollY > 60);
     }
 
     // ---- BARRE DE PROGRESSION ----
     const progressBar = document.getElementById('scrollProgress');
     if (progressBar) {
-        window.addEventListener('scroll', () => {
-            const max  = document.documentElement.scrollHeight - window.innerHeight;
-            const pct  = max > 0 ? (window.scrollY / max) * 100 : 0;
-            progressBar.style.width = pct + '%';
-        }, { passive: true });
     }
+
+    let scrollTicking = false;
+    window.addEventListener('scroll', () => {
+        if (scrollTicking) return;
+        scrollTicking = true;
+        requestAnimationFrame(() => {
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 60);
+            if (progressBar) {
+                const max = document.documentElement.scrollHeight - window.innerHeight;
+                progressBar.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
+            }
+            scrollTicking = false;
+        });
+    }, { passive: true });
 
     // ---- SCROLL REVEAL ----
     const revealEls   = document.querySelectorAll('.reveal');
@@ -288,28 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ---- EFFET PARALLAXE DE FOND ----
-    const orbs = document.querySelectorAll('.glow-orb');
-    const blobsContainer = document.querySelector('.hero-blobs-container');
-    
-    document.addEventListener('mousemove', (e) => {
-        const cx = window.innerWidth / 2;
-        const cy = window.innerHeight / 2;
-        
-        const dx = (e.clientX - cx) / cx;
-        const dy = (e.clientY - cy) / cy;
-        
-        // Parallaxe sur les orbes lumineuses
-        orbs.forEach((orb, idx) => {
-            const factor = (idx + 1) * 20;
-            orb.style.transform = `translate3d(${dx * factor}px, ${dy * factor}px, 0)`;
-        });
-        
-        // Parallaxe sur les blobs 3D du Hero
-        if (blobsContainer) {
-            blobsContainer.style.transform = `translate3d(${dx * 35}px, ${dy * 35}px, 0)`;
-        }
-    }, { passive: true });
+    // (Parallaxe de fond supprimé : trop coûteux, déplaçait des éléments floutés à chaque mouvement de souris.)
 
     // ---- CANVAS GRID INTERACTIF (BEYONDS) ----
     const canvas = document.getElementById('heroGridCanvas');
