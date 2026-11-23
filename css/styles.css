@@ -2141,3 +2141,25 @@ button, input, select, textarea { font-family: inherit; color: inherit; backgrou
     50% { transform: translate3d(-15px, -25px, 0) rotate(120deg); }
     100% { transform: translate3d(0, 0, 0) rotate(360deg); }
 }
+
+/* =============================================
+   PERFORMANCE (23/11/2026)
+   Fonds figés au lieu d'animations infinies floues,
+   haut de page visible tout de suite.
+   ============================================= */
+.preloader { display: none !important; }
+.perspective-grid-inner,
+.glow-orb, .orb-1, .orb-2, .orb-3,
+.hero-blob, .blob-cyan, .blob-blue, .blob-purple, .blob-left { animation: none !important; }
+.glow-orb { filter: blur(90px); }
+.hero-eyebrow { animation-delay: 0s !important; animation-duration: .5s !important; }
+.hero-sub { animation-delay: .1s !important; animation-duration: .5s !important; }
+.hero-actions { animation-delay: .15s !important; animation-duration: .5s !important; }
+.hero-visual-wrapper { animation-delay: .2s !important; animation-duration: .6s !important; }
+@media (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display: none !important; }
+  .hero-blob { filter: blur(16px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

@@ -8,19 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---- PRELOADER ----
     const preloader     = document.getElementById('preloader');
     const preloaderFill = document.getElementById('preloaderFill');
-    let fillPct = 0;
-
-    const fillInterval = setInterval(() => {
-        fillPct += Math.random() * 15 + 5;
-        if (fillPct >= 100) {
-            fillPct = 100;
-            clearInterval(fillInterval);
-            setTimeout(hidePreloader, 300);
-        }
-        if (preloaderFill) {
-            preloaderFill.style.width = fillPct + '%';
-        }
-    }, 70);
+    // Plus de faux chargement : la page s'affiche immédiatement.
+    requestAnimationFrame(hidePreloader);
 
     function hidePreloader() {
         if (preloader) {
@@ -33,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function animateHeroWords() {
         const words = document.querySelectorAll('.word');
         words.forEach((word, i) => {
-            word.style.transition = `transform 1.1s cubic-bezier(0.16, 1, 0.3, 1) ${0.08 + i * 0.08}s`;
+            word.style.transition = `transform .6s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.04}s`;
             word.style.transform  = 'translateY(0)';
         });
     }
@@ -42,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dot    = document.getElementById('cursorDot');
     const ring   = document.getElementById('cursorRing');
 
-    if (dot && ring) {
+    if (dot && ring && window.matchMedia('(pointer: fine)').matches) {
         let mx = -100, my = -100;
         let rx = -100, ry = -100;
 
@@ -384,26 +373,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.mouse.x = e.clientX - rect.left;
                     this.mouse.y = e.clientY - rect.top;
                     this.mouse.active = true;
+                    this.kick();
                 }, { passive: true });
 
                 heroSection.addEventListener('mouseleave', () => {
                     this.mouse.active = false;
                     this.mouse.x = -1000;
                     this.mouse.y = -1000;
+                    this.kick();
                 }, { passive: true });
 
                 window.addEventListener('resize', () => {
                     this.resize();
+                    this.kick();
                 }, { passive: true });
+            }
+
+            // Ne redessine que lorsque la souris bouge ou que la grille revient en place.
+            kick() {
+                if (!this.loop) { this.loop = true; requestAnimationFrame(() => this.animate()); }
             }
 
             animate() {
                 this.update();
                 this.draw();
-                requestAnimationFrame(() => this.animate());
+                if (this.mouse.active || this.moving) {
+                    requestAnimationFrame(() => this.animate());
+                } else {
+                    this.loop = false;
+                }
             }
 
             update() {
+                this.moving = false;
                 for (let c = 0; c < this.cols; c++) {
                     for (let r = 0; r < this.rows; r++) {
                         const p = this.points[c][r];
@@ -423,6 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         }
 
+                        if (Math.abs(targetX - p.x) > 0.1 || Math.abs(targetY - p.y) > 0.1) this.moving = true;
                         p.x += (targetX - p.x) * this.easing;
                         p.y += (targetY - p.y) * this.easing;
                     }
