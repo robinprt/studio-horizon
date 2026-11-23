@@ -1,0 +1,310 @@
+{
+  "craft": {
+    "overline": "La table",
+    "title_before": "Une cuisine végétale, ",
+    "title_highlight": "faite maison",
+    "title_after": ", au rythme des saisons.",
+    "cards": [
+      {
+        "tag": "Frais",
+        "title": "Des assiettes qui suivent la saison",
+        "text": "La cuisine se sert à l'ardoise, de <strong>12h à 14h</strong>. Tartines saisonnières, salade italienne à la burrata l'été, lasagne végétalienne, milloto aux champignons. Végétarien, vegan, flexitarien, sans gluten, chaque table trouve sa place."
+      },
+      {
+        "tag": "Maison",
+        "title": "Pâtisseries et boissons au comptoir",
+        "text": "Pour le matin, le goûter ou une pause entre deux rendez-vous. Cheesecake caramel-spéculos signature, jus 100&nbsp;% français, chaï latte, café de spécialité, thés bio en vrac à la tasse ou à emporter."
+      },
+      {
+        "tag": "Dimanche",
+        "title": "Le brunch d'hiver, lent et généreux",
+        "text": "Avocado toasts, pains muffins façon œufs Bénédicte, pancakes moelleux, smoothie bowls, jus frais et café. Une table à partager, du <strong>1<sup>er</sup> octobre au 31 mars</strong>, sur réservation."
+      }
+    ]
+  },
+  "marquee": {
+    "separator": "✿",
+    "items": [
+      "Restaurant coffee shop",
+      "Brunch les dimanches",
+      "Pâtisseries maison",
+      "Thés bio en vrac",
+      "Cuisine végétale",
+      "26 rue de la Marine, Pornic"
+    ]
+  },
+  "hours_news": {
+    "overline": "Actualités et horaires",
+    "title": "Ouvert du mardi au dimanche",
+    "panel_title": "9h à 19h en continu",
+    "panel_text": "Café, déjeuner de 12h à 14h, goûter, thé en vrac et douceurs maison.",
+    "panel_note": "Le lundi, la maison est fermée."
+  },
+  "site": {
+    "name": "MOW&MY",
+    "base_url": "https://mow-my.vercel.app",
+    "canonical": "https://mow-my.vercel.app/",
+    "logo": "assets/logo-rond.webp",
+    "theme_color": "#fbf3e7"
+  },
+  "visit": {
+    "overline": "L'adresse",
+    "title": "Au-dessus du Passage du Rocher.",
+    "address_line": "Entrez au 26 rue de la Marine, puis montez au 1<sup>er</sup> étage. La salle donne sur Pornic, à deux pas du centre et du port.",
+    "info": [
+      {
+        "label": "Ouvert",
+        "value": "Mardi au dimanche, 9h à 19h"
+      },
+      {
+        "label": "Le midi",
+        "value": "Ouverte de 12h à 14h"
+      },
+      {
+        "label": "Téléphone",
+        "value": "<a href=\"tel:+33984674099\">09 84 67 40 99</a>"
+      },
+      {
+        "label": "Brunch",
+        "value": "Le dimanche, du 1<sup>er</sup> octobre au 31 mars"
+      },
+      {
+        "label": "Salle & terrasse",
+        "value": "16 + 16 couverts"
+      },
+      {
+        "label": "À pied",
+        "value": "150&nbsp;m du centre · 400&nbsp;m de la gare · 500&nbsp;m de la mer"
+      },
+      {
+        "label": "À table",
+        "value": "Accessible PMR · Animaux admis"
+      },
+      {
+        "label": "En famille",
+        "value": "Poussette, chaise haute, chauffe-biberon, menu enfant"
+      },
+      {
+        "label": "À emporter",
+        "value": "Du mardi au dimanche"
+      }
+    ],
+    "map_title": "Carte Google Maps vers MOW&MY, Passage du Rocher à Pornic",
+    "map_caption": "<strong>Passage du Rocher</strong> · entrée au 26 rue de la Marine, puis monter au 1<sup>er</sup> étage.",
+    "map_button_label": "Itinéraire Google Maps"
+  },
+  "reservation": {
+    "privacy_text": "Vos informations servent uniquement au traitement de votre demande de réservation.",
+    "overline": "Réservation",
+    "side_address": "26 rue de la Marine, 1<sup>er</sup> étage du Passage du Rocher.",
+    "side_overline": "MOW&MY",
+    "side_title": "Restaurant coffee shop",
+    "side_text": "Brunch d'hiver les dimanches, du 1<sup>er</sup> octobre au 31 mars. Ouvert du mardi au dimanche, 9h à 19h. Cuisine ouverte de 12h à 14h.",
+    "side_phone_url": "#reserver",
+    "title": "Réserver une table",
+    "side_phone_label": "Réserver"
+  },
+  "brunch": {
+    "overline": "Le brunch",
+    "title_before": "Brunch d'hiver, du 1er octobre au ",
+    "title_highlight": "31 mars",
+    "title_after": ".",
+    "paragraphs": [
+      "Avocado toasts, pains muffins façon œufs Bénédicte, pancakes moelleux, smoothie bowls. Jus frais 100&nbsp;% français, café, chaï latte.",
+      "Une table à partager, plus lente, sucrée et salée, pour le rendez-vous du dimanche. <strong>De 8&nbsp;€ à 15&nbsp;€</strong> selon la formule."
+    ],
+    "cta_label": "Réserver",
+    "cta_url": "#reserver"
+  },
+  "gallery": [
+    {
+      "image": "assets/resto-1.webp",
+      "alt": "Salle du restaurant MOW&MY avec tables en bois"
+    },
+    {
+      "image": "assets/cake.webp",
+      "alt": "Dessert maison servi chez MOW&MY"
+    },
+    {
+      "image": "assets/resto-3.webp",
+      "alt": "Coin lumineux de la salle MOW&MY"
+    }
+  ],
+  "instagram": {
+    "overline": "Sur Instagram",
+    "title": "Une adresse à découvrir aussi en vidéo.",
+    "text": "Suivez Morane et Mylène sur Instagram pour les assiettes du jour, les nouveautés saisonnières et les coulisses de la maison.",
+    "instagram_label": "Instagram MOW&MY",
+    "instagram_url": "https://www.instagram.com/mowandmy/",
+    "video_label": "Ils parlent de nous",
+    "video_url": "https://www.instagram.com/reel/DWtF4GzDVMk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    "video_file": "assets/video-presentation.mp4"
+  },
+  "navigation": [
+    {
+      "label": "La table",
+      "url": "#savoir-faire"
+    },
+    {
+      "label": "La carte",
+      "url": "#carte"
+    },
+    {
+      "label": "Brunch",
+      "url": "#brunch"
+    },
+    {
+      "label": "Réserver",
+      "url": "#reservation"
+    },
+    {
+      "label": "L’adresse",
+      "url": "#venir"
+    }
+  ],
+  "hero": {
+    "primary_cta_url": "#la-carte",
+    "image_alt": "Salle lumineuse de MOW&MY au Passage du Rocher",
+    "baseline": "Restaurant, coffee shop & salon de thé",
+    "primary_cta_label": "Voir le menu",
+    "overline": "Restaurant · Coffee shop · Brunch · Pornic",
+    "intro": "Tenu par Morane et Mylène, MOW&MY accueille du matin au goûter. Cuisine maison, assiettes colorées, produits frais et brunch du dimanche.",
+    "quick_infos": [
+      "Ouvert mardi au dimanche, 9h à 19h",
+      "Cuisine de 12h à 14h",
+      "Brunch d'hiver le dimanche"
+    ],
+    "secondary_cta_url": "#reserver",
+    "title": "MOW&MY",
+    "secondary_cta_label": "Réserver",
+    "image": "assets/uploads/interieur 2.webp"
+  },
+  "footer": {
+    "description": "Restaurant coffee shop, brunch d'hiver le dimanche, cuisine fraîche et pâtisseries maison à Pornic. Tenu par Morane et Mylène.",
+    "address_title": "Adresse",
+    "address_html": "26 rue de la Marine<br>1<sup>er</sup> étage du Passage du Rocher<br>44210 Pornic",
+    "hours_title": "Horaires",
+    "hours_html": "Mardi au dimanche<br>9h à 19h",
+    "kitchen_html": "Cuisine 12h à 14h",
+    "contact_title": "Contact",
+    "bottom": "© MOW&MY · Pornic, France"
+  },
+  "seo": {
+    "title": "MOW&MY, restaurant coffee shop & brunch à Pornic",
+    "description": "MOW&MY, restaurant coffee shop végétarien tenu par Morane et Mylène à Pornic. Cuisine maison, produits frais et locaux, brunch d'hiver le dimanche. Ouvert du mardi au dimanche, 9h à 19h, 26 rue de la Marine.",
+    "og_title": "MOW&MY, restaurant coffee shop & brunch à Pornic",
+    "og_description": "Cuisine végétale et gourmande, produits frais et locaux, brunch d'hiver le dimanche. Au 1er étage du Passage du Rocher, Pornic.",
+    "og_image": "assets/uploads/interieur 2.webp",
+    "twitter_description": "Cuisine maison, produits frais et locaux, brunch d'hiver le dimanche au Passage du Rocher.",
+    "faq": [
+      {
+        "question": "Faut-il réserver chez MOW&MY ?",
+        "answer": "La réservation est recommandée pour le déjeuner, de 12h à 14h, et indispensable pour le brunch du dimanche. Vous pouvez réserver en ligne sur cette page ou par téléphone au 09 84 67 40 99."
+      },
+      {
+        "question": "Quels sont les horaires de MOW&MY à Pornic ?",
+        "answer": "MOW&MY est ouvert du mardi au dimanche, de 9h à 19h en continu. La cuisine se sert de 12h à 14h. Le restaurant est fermé le lundi."
+      },
+      {
+        "question": "Le brunch a-t-il lieu toute l'année ?",
+        "answer": "Le brunch d'hiver a lieu chaque dimanche, du 1er octobre au 31 mars. Tarifs de 8 € à 15 €. Réservation recommandée."
+      },
+      {
+        "question": "Le restaurant est-il accessible aux personnes à mobilité réduite ?",
+        "answer": "Oui, MOW&MY est accessible aux personnes à mobilité réduite. Le restaurant se trouve au 1er étage du Passage du Rocher."
+      },
+      {
+        "question": "Les animaux et les enfants sont-ils admis ?",
+        "answer": "Oui aux deux. MOW&MY admet les animaux et propose un menu enfant, des chaises hautes, un chauffe-biberon et l'accès aux poussettes."
+      },
+      {
+        "question": "Où se situe MOW&MY à Pornic ?",
+        "answer": "Au 26 rue de la Marine, 1er étage du Passage du Rocher, 44210 Pornic. À 150 m du centre, 400 m de la gare et 500 m de la mer."
+      }
+    ]
+  },
+  "restaurant": {
+    "postal_code": "44210",
+    "maps_embed_url": "https://www.google.com/maps?q=MOW%26MY%2026%20rue%20de%20la%20Marine%20Pornic&output=embed",
+    "instagram_url": "https://www.instagram.com/mowandmy/",
+    "price_range": "€€",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=MOW%26MY%2026%20rue%20de%20la%20Marine%20Pornic",
+    "opening_hours": "9h à 19h",
+    "serves_cuisine": [
+      "Coffee shop",
+      "Brunch",
+      "Vegetarian",
+      "Vegan",
+      "French"
+    ],
+    "city": "Pornic",
+    "name": "MOW&MY",
+    "same_as": [
+      "https://www.instagram.com/mowandmy/",
+      "https://www.pornic.com/mow-my.html",
+      "https://en.pornic.com/mow.html",
+      "https://rando.loire-atlantique.fr/service/186012-Mow-%26-My",
+      "https://www.petitfute.com/v27615-pornic-44210/c1165-restaurants/c4-cuisine-francaise/c1-bistrot-brasserie/2074054-mow-my.html"
+    ],
+    "latitude": 47.11567,
+    "phone": "09 84 67 40 99",
+    "longitude": -2.10172,
+    "alternate_name": "Mow & My",
+    "address_short": "26 rue de la Marine, Pornic",
+    "kitchen_hours": "12h à 14h",
+    "region": "Pays de la Loire",
+    "country": "FR",
+    "street_address": "26 rue de la Marine, 1er étage du Passage du Rocher",
+    "email": "mowandmy@gmail.com",
+    "features": [
+      "Terrasse",
+      "Accessible PMR",
+      "Animaux admis",
+      "À emporter",
+      "Menu enfant"
+    ],
+    "phone_international": "+33984674099",
+    "brunch_hours": "Le dimanche, du 1er octobre au 31 mars",
+    "opening_days": "Mardi au dimanche"
+  },
+  "menu": {
+    "overline": "Ce qu'on cuisine",
+    "title_before": "Ce qu'on ",
+    "title_highlight": "cuisine",
+    "title_after": ".",
+    "note": "V Végétarien · VG Végétalien · Carte selon arrivages, mise à jour régulièrement",
+    "sections": [
+      {
+        "title": "Entrées",
+        "items": [
+          { "name": "Salade de pommes, céleri-rave et betterave", "desc": "Marinés au vinaigre de cidre, vinaigrette moutarde", "price": "5,50 €", "diet": "V VG" },
+          { "name": "Rouleau de printemps, houmous pois chiche", "desc": "Trilogie de carottes, sauce cacahuète", "price": "7,00 €", "diet": "V VG" }
+        ]
+      },
+      {
+        "title": "Plats",
+        "items": [
+          { "name": "Tartine asperges blanches & œuf mollet", "desc": "Mayonnaise à la truffe, crudités, salade", "price": "15,50 €", "diet": "V" },
+          { "name": "Paupiette de poulet, cheddar et bacon", "desc": "Champignons, purée maison, sauce moutarde", "price": "17,00 €", "diet": "" },
+          { "name": "Milloto aux champignons bruns", "desc": "Oignons rouges, persil", "price": "14,00 €", "diet": "V" },
+          { "name": "Lasagne végétalienne à la betterave", "desc": "Poireaux, ricotta végétale, ciboulette, salade verte", "price": "15,50 €", "diet": "V VG" }
+        ]
+      },
+      {
+        "title": "Du moment",
+        "items": [
+          { "name": "Salade italienne à la burrata", "desc": "Tartines saisonnières, coup de cœur de l'été", "price": "", "diet": "V" },
+          { "name": "Cheesecake caramel-spéculos", "desc": "Pâtisserie maison signature", "price": "", "diet": "V" }
+        ]
+      },
+      {
+        "title": "Boissons",
+        "items": [
+          { "name": "Café filtre, expresso, latte", "desc": "Torréfaction artisanale", "price": "2,50 à 4 €", "diet": "V VG" },
+          { "name": "Jus de fruits frais 100% français", "desc": "", "price": "4,50 €", "diet": "V VG" },
+          { "name": "Chaï latte maison", "desc": "Épices moulues à la commande", "price": "4 €", "diet": "V" }
+        ]
+      }
+    ]
+  }
+}

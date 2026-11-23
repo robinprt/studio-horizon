@@ -1,0 +1,74 @@
+:root {
+    /* Color Palette - HSL (Hue, Saturation, Lightness) */
+    
+    /* Primary: Cyan / Teal (#02BBC2) for a fresh, modern and trustworthy health/wellness vibe */
+    --color-primary: hsl(182, 98%, 38%);
+    --color-primary-light: hsl(182, 90%, 45%);
+    --color-primary-dark: hsl(182, 100%, 28%);
+    --color-primary-tint: hsl(182, 50%, 96%);
+    --color-primary-glow: hsla(182, 98%, 38%, 0.15);
+
+    /* Secondary: Sand / Warm Gold (Comfort, hospitality, human warmth) */
+    --color-secondary: hsl(35, 30%, 45%);
+    --color-secondary-light: hsl(35, 25%, 55%);
+    --color-secondary-dark: hsl(35, 35%, 32%);
+    --color-secondary-tint: hsl(35, 45%, 96%);
+
+    /* Neutrals */
+    --color-text: hsl(210, 24%, 16%);
+    --color-text-light: hsl(210, 16%, 40%);
+    --color-bg: #FBFFFE;
+    --color-bg-card: #FBFFFE;
+    --color-bg-alternate: hsl(35, 45%, 97%);
+    --color-border: hsl(210, 14%, 88%);
+    --color-border-light: hsl(210, 14%, 93%);
+    
+    /* Alert / Accents */
+    --color-warning: hsl(6, 65%, 45%);
+    --color-warning-tint: hsl(6, 70%, 97%);
+    --color-doctolib: hsl(182, 98%, 38%);
+    --color-doctolib-hover: hsl(182, 98%, 30%);
+
+    /* Typography Scales */
+    --font-primary: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+    
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.125rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 2.75rem;
+    --font-size-4xl: 3.5rem;
+
+    /* Spacing System */
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    --space-2xl: 6rem;
+
+    /* Layout Containers */
+    --container-max-width: 1200px;
+    --container-max-width-medium: 800px;
+
+    /* Design Details */
+    --radius-small: 6px;
+    --radius-medium: 12px;
+    --radius-large: 24px;
+    --radius-pill: 9999px;
+    
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 4px 12px rgba(158, 168, 175, 0.08), 0 2px 4px rgba(0, 0, 0, 0.02);
+    --shadow-lg: 0 12px 32px rgba(44, 60, 70, 0.06), 0 4px 12px rgba(0, 0, 0, 0.02);
+    --shadow-glow: 0 8px 24px rgba(42, 72, 59, 0.08);
+
+    /* Animation Timings */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

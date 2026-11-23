@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Accueil (FR) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+  <!-- Accueil (EN) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+  <!-- Carte / Menu (FR) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/menu</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/menu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/menu?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/menu"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+  <!-- Carte / Menu (EN) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/menu?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/menu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/menu?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/menu"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+  <!-- Notre Histoire (FR) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/concept</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/concept"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/concept?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/concept"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+  <!-- Notre Histoire (EN) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/concept?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/concept"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/concept?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/concept"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+  <!-- Galerie (FR) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/galerie</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/galerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/galerie?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/galerie"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+  <!-- Galerie (EN) -->
+  <url>
+    <loc>https://www.creperielerecif.fr/galerie?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.creperielerecif.fr/galerie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.creperielerecif.fr/galerie?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.creperielerecif.fr/galerie"/>
+    <lastmod>2026-05-09</lastmod>
+  </url>
+
+</urlset>

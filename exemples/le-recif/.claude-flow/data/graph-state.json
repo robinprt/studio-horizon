@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "updatedAt": 1778364093004,
+  "nodeCount": 15,
+  "nodes": {
+    "mem-MEMORY-contexte-projet": {
+      "id": "mem-MEMORY-contexte-projet",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1778363813126
+    },
+    "mem-MEMORY-stack-technique": {
+      "id": "mem-MEMORY-stack-technique",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1778363813126
+    },
+    "mem-MEMORY-structure-des-buckets-supabase": {
+      "id": "mem-MEMORY-structure-des-buckets-supabase",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1778363813126
+    },
+    "mem-MEMORY-fichiers-cr--s-phase-1": {
+      "id": "mem-MEMORY-fichiers-cr--s-phase-1",
+      "category": "core",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1778363813126
+    },
+    "mem-MEMORY-mod-le--conomique": {
+      "id": "mem-MEMORY-mod-le--conomique",
+      "category": "core",
+      "confidence": 0.6100000000000001,
+      "accessCount": 3,
+      "createdAt": 1778363813126
+    },
+    "mem-MEMORY-conventions-de-code": {
+      "id": "mem-MEMORY-conventions-de-code",
+      "category": "core",
+      "confidence": 0.7100000000000002,
+      "accessCount": 5,
+      "createdAt": 1778363813126
+    },
+    "mem-MEMORY-phase-suivante--phase-2-": {
+      "id": "mem-MEMORY-phase-suivante--phase-2-",
+      "category": "core",
+      "confidence": 0.8300000000000003,
+      "accessCount": 7,
+      "createdAt": 1778363813126
+    },
+    "mem-MEMORY-m-moire-du-projet-le-r-cif": {
+      "id": "mem-MEMORY-m-moire-du-projet-le-r-cif",
+      "category": "core",
+      "confidence": 0.7600000000000002,
+      "accessCount": 6,
+      "createdAt": 1778363813127
+    },
+    "mem-project_lerecif----": {
+      "id": "mem-project_lerecif----",
+      "category": "project_lerecif",
+      "confidence": 0.6600000000000001,
+      "accessCount": 4,
+      "createdAt": 1778363813127
+    },
+    "mem-project_lerecif-infos-cl-s": {
+      "id": "mem-project_lerecif-infos-cl-s",
+      "category": "project_lerecif",
+      "confidence": 0.7900000000000003,
+      "accessCount": 7,
+      "createdAt": 1778363813127
+    },
+    "mem-project_lerecif-architecture": {
+      "id": "mem-project_lerecif-architecture",
+      "category": "project_lerecif",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1778363813127
+    },
+    "mem-project_seo_state----": {
+      "id": "mem-project_seo_state----",
+      "category": "project_seo_state",
+      "confidence": 0.6300000000000001,
+      "accessCount": 3,
+      "createdAt": 1778363813127
+    },
+    "mem-project_seo_state-d-j--fait": {
+      "id": "mem-project_seo_state-d-j--fait",
+      "category": "project_seo_state",
+      "confidence": 0.7600000000000002,
+      "accessCount": 6,
+      "createdAt": 1778363813127
+    },
+    "mem-project_seo_state-reste---faire--priorit--": {
+      "id": "mem-project_seo_state-reste---faire--priorit--",
+      "category": "project_seo_state",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1778363813127
+    },
+    "insight-1778364001723-fvud": {
+      "id": "insight-1778364001723-fvud",
+      "category": "insights",
+      "confidence": 0.5,
+      "accessCount": 0,
+      "createdAt": 1778364001723
+    }
+  },
+  "edges": [
+    {
+      "sourceId": "mem-MEMORY-contexte-projet",
+      "targetId": "mem-MEMORY-stack-technique",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-stack-technique",
+      "targetId": "mem-MEMORY-structure-des-buckets-supabase",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-structure-des-buckets-supabase",
+      "targetId": "mem-MEMORY-fichiers-cr--s-phase-1",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-fichiers-cr--s-phase-1",
+      "targetId": "mem-MEMORY-mod-le--conomique",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-mod-le--conomique",
+      "targetId": "mem-MEMORY-conventions-de-code",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-MEMORY-conventions-de-code",
+      "targetId": "mem-MEMORY-phase-suivante--phase-2-",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_lerecif----",
+      "targetId": "mem-project_lerecif-infos-cl-s",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_lerecif-infos-cl-s",
+      "targetId": "mem-project_lerecif-architecture",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_seo_state----",
+      "targetId": "mem-project_seo_state-d-j--fait",
+      "type": "temporal",
+      "weight": 0.5
+    },
+    {
+      "sourceId": "mem-project_seo_state-d-j--fait",
+      "targetId": "mem-project_seo_state-reste---faire--priorit--",
+      "type": "temporal",
+      "weight": 0.5
+    }
+  ],
+  "pageRanks": {
+    "mem-MEMORY-contexte-projet": 0.029546834149611616,
+    "mem-MEMORY-stack-technique": 0.05466163262839317,
+    "mem-MEMORY-structure-des-buckets-supabase": 0.07600926448211565,
+    "mem-MEMORY-fichiers-cr--s-phase-1": 0.09415478934380106,
+    "mem-MEMORY-mod-le--conomique": 0.10957835886138603,
+    "mem-MEMORY-conventions-de-code": 0.12268818767355189,
+    "mem-MEMORY-phase-suivante--phase-2-": 0.13383180204167666,
+    "mem-MEMORY-m-moire-du-projet-le-r-cif": 0.029546834149611616,
+    "mem-project_lerecif----": 0.029546834149611616,
+    "mem-project_lerecif-infos-cl-s": 0.05466163262839317,
+    "mem-project_lerecif-architecture": 0.07600926448211565,
+    "mem-project_seo_state----": 0.029546834149611616,
+    "mem-project_seo_state-d-j--fait": 0.05466163262839317,
+    "mem-project_seo_state-reste---faire--priorit--": 0.07600926448211565,
+    "insight-1778364001723-fvud": 0.029546834149611616
+  }
+}

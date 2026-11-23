@@ -1,0 +1,23 @@
+{
+  "id": "session-1778363813119",
+  "startedAt": "2026-05-09T21:56:53.119Z",
+  "cwd": "/Users/robinpeyrat/projects/WEBSITE RESTo /le recif website/docs",
+  "context": {
+    "lastMatchedPatterns": [
+      "mem-project_seo_state-d-j--fait",
+      "mem-project_seo_state----",
+      "mem-MEMORY-phase-suivante--phase-2-",
+      "mem-project_lerecif-architecture",
+      "mem-project_lerecif----"
+    ]
+  },
+  "metrics": {
+    "edits": 0,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "updatedAt": "2026-05-09T22:00:01.670Z",
+  "endedAt": "2026-05-09T22:00:01.727Z",
+  "duration": 188608
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "timestamp": 1778364001726,
+    "nodes": 15,
+    "edges": 10,
+    "pageRankSum": 1,
+    "confidences": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "accessCounts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "topPatterns": [
+      {
+        "id": "mem-MEMORY-phase-suivante--phase-2-",
+        "summary": "Phase suivante (Phase 2)",
+        "confidence": 0.5,
+        "pageRank": 0.13383180204167666,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-MEMORY-conventions-de-code",
+        "summary": "Conventions de code",
+        "confidence": 0.5,
+        "pageRank": 0.12268818767355189,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-MEMORY-mod-le--conomique",
+        "summary": "Modèle économique",
+        "confidence": 0.5,
+        "pageRank": 0.10957835886138603,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-MEMORY-fichiers-cr--s-phase-1",
+        "summary": "Fichiers créés Phase 1",
+        "confidence": 0.5,
+        "pageRank": 0.09415478934380106,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-MEMORY-structure-des-buckets-supabase",
+        "summary": "Structure des buckets Supabase Storage",
+        "confidence": 0.5,
+        "pageRank": 0.07600926448211565,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-project_lerecif-architecture",
+        "summary": "Architecture",
+        "confidence": 0.5,
+        "pageRank": 0.07600926448211565,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-project_seo_state-reste---faire--priorit--",
+        "summary": "Reste à faire (priorité)",
+        "confidence": 0.5,
+        "pageRank": 0.07600926448211565,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-MEMORY-stack-technique",
+        "summary": "Stack technique",
+        "confidence": 0.5,
+        "pageRank": 0.05466163262839317,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-project_lerecif-infos-cl-s",
+        "summary": "Infos clés",
+        "confidence": 0.5,
+        "pageRank": 0.05466163262839317,
+        "accessCount": 0
+      },
+      {
+        "id": "mem-project_seo_state-d-j--fait",
+        "summary": "Déjà fait",
+        "confidence": 0.5,
+        "pageRank": 0.05466163262839317,
+        "accessCount": 0
+      }
+    ]
+  }
+]

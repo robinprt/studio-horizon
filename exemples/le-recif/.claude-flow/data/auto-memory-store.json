@@ -1,0 +1,198 @@
+[
+  {
+    "id": "mem-MEMORY-contexte-projet",
+    "key": "contexte-projet",
+    "content": "Concurrent de BeatStars pour le marché francophone. Différenciants clés :\n- 0% de commission (BeatStars prend 12%)\n- Analytics YouTube intégrés (corrélation clics YouTube → ventes)\n- Paiements directs via Stripe Connect Express",
+    "summary": "Contexte projet",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Desktop-stripe/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813126
+  },
+  {
+    "id": "mem-MEMORY-stack-technique",
+    "key": "stack-technique",
+    "content": "- Next.js 14 (App Router), TypeScript, Tailwind CSS\n- PostgreSQL via Supabase (auth incluse) + Prisma ORM\n- Stripe Connect (paiements) + Stripe Subscriptions (9,99€/mois producteurs)\n- Supabase Storage (audio files), Wavesurfer.js, Tone.js, Zustand\n- YouTube Data API v3 + YouTube Analytics API\n- Resend (emails), Upstash Redis (rate limiting)",
+    "summary": "Stack technique",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Desktop-stripe/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813126
+  },
+  {
+    "id": "mem-MEMORY-structure-des-buckets-supabase",
+    "key": "structure-des-buckets-supabase-storage",
+    "content": "- `beat-previews`: public, previews MP3 taggés (30-60s)\n- `beat-files`: private, MP3/WAV/Stems complets (signed URLs 10min)\n- `beat-covers`: public, images de couverture",
+    "summary": "Structure des buckets Supabase Storage",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Desktop-stripe/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813126
+  },
+  {
+    "id": "mem-MEMORY-fichiers-cr--s-phase-1",
+    "key": "fichiers-cr-s-phase-1",
+    "content": "```\npackage.json, tsconfig.json, next.config.ts, tailwind.config.ts, postcss.config.mjs\n.env.example\nprisma/schema.prisma                    # Schéma complet (13 tables)\nsrc/lib/prisma.ts                       # Singleton PrismaClient\nsrc/lib/supabase/client.ts              # Browser client\nsrc/lib/supabase/server.ts              # Server client + Admin client\nsrc/lib/encryption.ts                   # AES-256-GCM pour tokens YouTube\nsrc/lib/stripe.ts                       # Stripe client + utils",
+    "summary": "Fichiers créés Phase 1",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Desktop-stripe/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813126
+  },
+  {
+    "id": "mem-MEMORY-mod-le--conomique",
+    "key": "mod-le-conomique",
+    "content": "- Abonnement producteur : 9,99€/mois (Stripe Subscription)\n- Commission : 0%\n- Frais Stripe : ~1,4% + 0,25€ affichés transparement au checkout",
+    "summary": "Modèle économique",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Desktop-stripe/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813126
+  },
+  {
+    "id": "mem-MEMORY-conventions-de-code",
+    "key": "conventions-de-code",
+    "content": "- Toujours `await createClient()` pour le client Supabase server\n- Signed URLs Supabase pour les fichiers privés (expiration 10min, max 3 downloads/order)\n- Tracking slug unique par beat pour attribution YouTube → ventes\n- Tokens YouTube chiffrés AES-256-GCM avant stockage en base",
+    "summary": "Conventions de code",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Desktop-stripe/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813126
+  },
+  {
+    "id": "mem-MEMORY-phase-suivante--phase-2-",
+    "key": "phase-suivante-phase-2-",
+    "content": "5. Pages producteur /[username] et beat /beats/[slug]\n6. Stripe Connect onboarding\n7. Stripe Subscriptions\n8. Flow paiement + webhooks\n9. Génération PDF contrat (@react-pdf/renderer)\n10. Téléchargement sécurisé (signed URLs)",
+    "summary": "Phase suivante (Phase 2)",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Desktop-stripe/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813126
+  },
+  {
+    "id": "mem-MEMORY-m-moire-du-projet-le-r-cif",
+    "key": "m-moire-du-projet-le-r-cif",
+    "content": "- [Le Récif — infos projet](project_lerecif.md) — Domaine creperielerecif.fr, Vercel, contacts, architecture\n- [Le Récif — état SEO](project_seo_state.md) — Ce qui a été fait et ce qui reste à faire en SEO",
+    "summary": "Mémoire du projet Le Récif",
+    "namespace": "core",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Downloads-le-recif-website-docs/memory/MEMORY.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813127
+  },
+  {
+    "id": "mem-project_lerecif----",
+    "key": "-",
+    "content": "name: Le Récif — infos projet\ndescription: Domaine, hébergement, contacts et état du site creperielerecif.fr\ntype: project\n---\n\nSite web vitrine pour la crêperie Le Récif à Saint-Gilles-Croix-de-Vie (Vendée).\n\n**Why:** Site HTML/CSS/JS vanilla, hébergé sur Vercel, domaine creperielerecif.fr confirmé par le propriétaire.\n\n**How to apply:** Toujours utiliser `www.creperielerecif.fr` comme domaine de référence. Le dossier de travail est `/Users/robinpeyrat/Downloads/le recif website/docs/`.",
+    "summary": "---",
+    "namespace": "project_lerecif",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Downloads-le-recif-website-docs/memory/project_lerecif.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813127
+  },
+  {
+    "id": "mem-project_lerecif-infos-cl-s",
+    "key": "infos-cl-s",
+    "content": "- **Domaine** : www.creperielerecif.fr (enregistré chez OVH)\n- **Hébergement** : Vercel\n- **Config Vercel** : `docs/vercel.json` (cleanUrls, redirect non-www→www, headers sécu)\n- **Email** : creperielerecif@gmail.com\n- **Téléphone** : 02 28 10 90 01\n- **Adresse** : 20 Boulevard de la Mer, 85800 Saint-Gilles-Croix-de-Vie\n- **Gérants** : Carol-Ann & Richard\n- **Réservation** : https://app.overfull.fr (Overfull)\n- **Instagram** : @lerecif_sgxv\n- **Facebook** : lerecifsgxv\n- **GPS** : 46.699259, -1.",
+    "summary": "Infos clés",
+    "namespace": "project_lerecif",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Downloads-le-recif-website-docs/memory/project_lerecif.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813127
+  },
+  {
+    "id": "mem-project_lerecif-architecture",
+    "key": "architecture",
+    "content": "- HTML/CSS/JS vanilla — pas de framework\n- Navigation injectée dynamiquement via `js/components.js` (header/footer/logo)\n- Multilingue FR/EN client-side via `js/translations.js` + `?lang=en`\n- Images en .webp dans `images/photos-originales/`\n- `.htaccess` présent mais ignoré par Vercel (conservé comme référence)",
+    "summary": "Architecture",
+    "namespace": "project_lerecif",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Downloads-le-recif-website-docs/memory/project_lerecif.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813127
+  },
+  {
+    "id": "mem-project_seo_state----",
+    "key": "-",
+    "content": "name: Le Récif — état SEO\ndescription: Ce qui a été fait en SEO sur creperielerecif.fr et ce qui reste à faire\ntype: project\n---\n\nAudit SEO complet effectué le 2026-04-02 avec 6 agents spécialisés (technique, contenu, schema, sitemap, GEO, images).\n\n**Why:** Mise en ligne imminente sur creperielerecif.fr — besoin d'une base SEO solide dès le départ.\n\n**How to apply:** Ne pas re-faire ce qui est déjà en place. Se concentrer sur les points restants ci-dessous.",
+    "summary": "---",
+    "namespace": "project_seo_state",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Downloads-le-recif-website-docs/memory/project_seo_state.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813127
+  },
+  {
+    "id": "mem-project_seo_state-d-j--fait",
+    "key": "d-j-fait",
+    "content": "- Domaine `creperielerecif.fr` mis à jour partout\n- `vercel.json` créé (cleanUrls, www redirect, CSP, headers sécu)\n- `sitemap.xml` : 8 URLs (4 pages × FR/EN), hreflang xhtml:link complets\n- `robots.txt` simplifié\n- `llms.txt` enrichi (menu complet + prix, réservation, 148 mots citables)\n- Schema `Restaurant` consolidé sur index.html (@id, heures correctes 11h-21h, WebSite ajouté)\n- Schema `Menu` complet sur menu.html (10 galettes + 10 crêpes)\n- Schema `Person @graph` sur concept.html\n- Schema `",
+    "summary": "Déjà fait",
+    "namespace": "project_seo_state",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Downloads-le-recif-website-docs/memory/project_seo_state.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813127
+  },
+  {
+    "id": "mem-project_seo_state-reste---faire--priorit--",
+    "key": "reste-faire-priorit-",
+    "content": "1. **LCP** : Supprimer le délai forcé de 2s dans `js/main.js` (loader setTimeout)\n2. **RGPD** : Bannière consentement cookies (Instagram embed + Google Maps)\n3. **HTML statique** : Déplacer header/footer de components.js vers HTML statique (crawlabilité)\n4. **Contenu** : Ajouter paragraphe \"about\" de 140-160 mots sur index.html (citabilité IA)\n5. **PDF menu** : Renommer `images/menu Le Récif.pdf` → `menu-le-recif.pdf`",
+    "summary": "Reste à faire (priorité)",
+    "namespace": "project_seo_state",
+    "type": "semantic",
+    "metadata": {
+      "sourceFile": "/Users/robinpeyrat/.claude/projects/-Users-robinpeyrat-Downloads-le-recif-website-docs/memory/project_seo_state.md",
+      "bootstrapped": true
+    },
+    "createdAt": 1778363813127
+  },
+  {
+    "id": "insight-1778364001723-fvud",
+    "key": "frequent-edit-unknown",
+    "content": "File unknown was edited 29 times this session — likely a hot path worth monitoring.",
+    "summary": "Frequently edited: unknown (29x)",
+    "namespace": "insights",
+    "type": "procedural",
+    "metadata": {
+      "sourceFile": "unknown",
+      "editCount": 29,
+      "autoGenerated": true
+    },
+    "createdAt": 1778364001723
+  }
+]

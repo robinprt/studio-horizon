@@ -1,0 +1,74 @@
+# Le Récif - Crêperie
+# RSL: allow-training=no, allow-indexing=yes, allow-reading=yes
+
+> Le Récif est une crêperie artisanale installée au 20 Boulevard de la Mer, à Saint-Gilles-Croix-de-Vie (Vendée, 85800), avec vue directe sur la plage de Boisvinet. Carol-Ann et Richard accueillent leurs clients 7 jours sur 7 en service continu, du lundi au dimanche de 11h à 21h. La carte est exclusivement centrée sur les galettes de sarrasin bio IGP Pays de la Loire, les crêpes de froment, et les coupes glacées artisanales fabriquées en Vendée. Les produits proviennent de fournisseurs locaux de Saint-Gilles-Croix-de-Vie et de la région Pays de la Loire. Le restaurant a été mis à l'honneur dans un reportage TF1. Réservation conseillée, surtout en haute saison : 02 28 10 90 01. Les animaux sont acceptés en terrasse.
+
+## Informations générales
+
+- **Nom** : Le Récif
+- **Type** : Crêperie / Restaurant de galettes et crêpes
+- **Adresse** : 20 Boulevard de la Mer, 85800 Saint-Gilles-Croix-de-Vie, France
+- **Téléphone** : 02 28 10 90 01
+- **Email** : creperielerecif@gmail.com
+- **Horaires** : Ouvert 7j/7 de 10h à 21h, en service continu
+- **Gérants** : Carol-Ann & Richard
+- **Emplacement** : Vue sur la plage de Boisvinet, Saint-Gilles-Croix-de-Vie
+
+## Menu complet
+
+### Galettes de sarrasin (farine bio IGP Pays de la Loire — sans gluten)
+
+- Jambon ou Emmental ou Oeuf : 7,50 €
+- Jambon, Emmental : 8,80 €
+- Complète (jambon, emmental, oeuf) : 9,50 €
+- Capaccino (tomate séchée, roquette, jambon sec, parmesan, vinaigre balsamique) : 8,00 €
+- Végétarienne (champignons, tomates, oignons, crème fraîche, emmental) : 10,50 €
+- Bargire (steak haché, salade, oignons) : 11,50 €
+- Fermière (lardons, champignons, pommes de terre, crème fraîche, emmental) : 12,50 €
+- Gourmande (andouille, pommes de terre, moutarde à l'ancienne, crème fraîche) : 13,00 €
+- YOYO (chèvre, pommes, tomates confites, miel) : 13,50 €
+- Vendéenne (jambon de Vendée, mogette, crème de curry, chèvre, tomates confites) : 14,50 €
+
+### Crêpes gourmandes (farine de froment bio IGP Pays de la Loire)
+
+- Sucre : 3,50 €
+- Beurre sucre : 4,00 €
+- Beurre sucre, jus de citron : 4,50 €
+- Miel ou confiture : 4,50 €
+- Nutella ou chocolat maison : 5,50 €
+- Caramel beurre salé maison : 6,50 €
+- Duo (deux garnitures au choix) : 7,50 €
+- Fruitée (fruits de saison, coulis de fruits rouges, chantilly) : 8,50 €
+- Ti-punch (rhum, citron vert, sucre de canne) : 9,50 €
+- Suzette (Grand Marnier ou Cointreau, orange, zeste de citron, chantilly) : 9,50 €
+
+### Coupes glacées
+
+Glaces artisanales fabriquées en Vendée — suggestions à l'ardoise selon la saison.
+
+## Réservation
+
+- **Téléphone** : 02 28 10 90 01
+- **Réservation en ligne** : https://app.overfull.fr/booking-v2?key_id=AbFr8evzbNs&source=Web&lang=fr
+
+## Infos pratiques
+
+- Animaux acceptés en terrasse
+- Galettes de sarrasin naturellement sans gluten
+- Privatisation du restaurant possible sur demande (événements familles, entreprises)
+- Paiement : carte bancaire et espèces acceptés
+
+## Points forts
+
+- Fabrication maison
+- Produits frais, locaux et de qualité (fournisseurs de Saint-Gilles-Croix-de-Vie, Vendée, Pays de la Loire)
+- Vue sur la plage de Boisvinet
+- Reportage TF1 : https://www.tf1.fr/lci/bonjour-la-matinale-tf1/videos/le-jt-du-vendredi-9-fevrier-a-7h-bonjour-la-matinale-tf1-24534624.html
+
+## Pages du site
+
+- [Accueil](https://www.creperielerecif.fr/) : Présentation et menu rapide
+- [Carte](https://www.creperielerecif.fr/menu) : Menu complet avec prix
+- [Crêperie](https://www.creperielerecif.fr/concept) : Notre histoire, valeurs et équipe
+- [Galerie](https://www.creperielerecif.fr/galerie) : Photos du restaurant et des plats
+- [Contact & Réservation](https://www.creperielerecif.fr/#contact) : Réservations et informations pratiques

@@ -1,0 +1,1236 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOW&amp;MY — Restaurant coffee shop &amp; brunch · Pornic</title>
+  <meta name="description" content="MOW&amp;MY, restaurant coffee shop végétarien tenu par Morane et Mylène à Pornic. Cuisine maison, produits frais et locaux, brunch d'hiver le dimanche. Ouvert du mardi au dimanche, 9h à 19h.">
+  <meta name="theme-color" content="#fbf3e7">
+  <link rel="canonical" href="https://mow-my.vercel.app/">
+  <meta property="og:title" content="MOW&amp;MY — Restaurant coffee shop &amp; brunch · Pornic">
+  <meta property="og:description" content="Restaurant, coffee shop et salon de thé à Pornic. Cuisine maison, assiettes colorées, brunch le dimanche.">
+  <meta property="og:image" content="https://mow-my.vercel.app/assets/uploads/interieur%202.webp">
+  <meta property="og:url" content="https://mow-my.vercel.app/">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/uploads/interieur%202.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ── COOKIE BANNER ── -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-modal="true">
+  <p class="cookie-banner__title" id="cookieTitle">Cookies &amp; confidentialité</p>
+  <p class="cookie-banner__text">
+    <span>Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic.</span>
+    <a href="confidentialite.html">En savoir plus</a>
+  </p>
+  <div class="cookie-banner__actions">
+    <button class="cookie-banner__accept" id="cookieAccept">Accepter</button>
+    <button class="cookie-banner__refuse" id="cookieRefuse">Refuser</button>
+  </div>
+</div>
+
+<!-- ── ACTU BANNER ── -->
+<div class="actu-banner" id="actuBanner" role="banner">
+  <span class="actu-banner__tag">Saison</span>
+  <p class="actu-banner__text">
+    <strong>Asperges blanches de Loire</strong> · à la carte jusqu'au 15 juin · Tartine &amp; œuf mollet, mayo truffe
+  </p>
+  <a class="actu-banner__link" href="#la-carte">Voir la carte</a>
+  <button class="actu-banner__close" type="button" id="actuClose" aria-label="Fermer">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+</div>
+
+<!-- ── HEADER ── -->
+<header class="site-header" id="top">
+  <div class="site-header__inner">
+    <a class="site-logo" href="#top" aria-label="MOW&amp;MY — retour à l'accueil">
+      <img src="assets/logo-rond.webp" width="34" height="34" alt="">
+      <span>MOW&amp;MY</span>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Navigation principale">
+      <a href="#la-table">La table</a>
+      <a href="#la-carte">La carte</a>
+      <a href="#brunch">Brunch</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#venir">L'adresse</a>
+      <a href="loyalty.html">Fidélité</a>
+    </nav>
+
+    <a class="btn btn--outline site-header__cta" href="#reserver">Réserver</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Ouvrir le menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+        <line x1="4" y1="8" x2="20" y2="8"/>
+        <line x1="4" y1="16" x2="20" y2="16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ── HERO ── -->
+<section class="hero hero--cover" aria-labelledby="hero-title">
+  <div class="hero__media">
+    <img src="assets/uploads/interieur%202.webp" alt="Salle du restaurant MOW&amp;MY, lumière naturelle" fetchpriority="high">
+  </div>
+  <div class="hero__content">
+    <p class="eyebrow" data-reveal>Restaurant · Coffee shop · Brunch · Pornic</p>
+    <h1 id="hero-title" class="hero__title" data-reveal data-delay="1">MOW&amp;MY</h1>
+    <p class="hero__baseline" data-reveal data-delay="2">Restaurant, coffee shop &amp; salon de thé</p>
+    <p class="hero__sub" data-reveal data-delay="3">
+      Tenu par Morane et Mylène, MOW&amp;MY accueille du matin au goûter. Cuisine maison, assiettes colorées, produits frais et brunch du dimanche.
+    </p>
+    <p class="hero__address" data-reveal data-delay="3">
+      26 rue de la Marine, 1<sup>er</sup> étage du Passage du Rocher · Pornic
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#la-carte" onclick="return window.mowScrollTo ? window.mowScrollTo('la-carte') : true;">
+        <span>Voir le menu</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="btn btn--outline hero__reserve" href="#reserver" onclick="return window.mowScrollTo ? window.mowScrollTo('reserver') : true;">Réserver</a>
+    </div>
+    <div class="hero__service-line" aria-label="Horaires principaux">
+      <span>Ouvert mardi au dimanche, 9h à 19h</span>
+      <span>Cuisine de 12h à 14h</span>
+      <span>Brunch le dimanche</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS STRIP ── -->
+<div class="stats-strip" aria-label="Chiffres clés">
+  <div class="stats-strip__inner">
+    <div class="stat-item" data-reveal>
+      <span class="stat-item__value">32</span>
+      <span class="stat-item__label">Couverts max</span>
+    </div>
+    <div class="stats-strip__divider" aria-hidden="true"></div>
+    <div class="stat-item" data-reveal data-delay="1">
+      <span class="stat-item__value">6j/7</span>
+      <span class="stat-item__label">Ouvert</span>
+    </div>
+    <div class="stats-strip__divider" aria-hidden="true"></div>
+    <div class="stat-item" data-reveal data-delay="2">
+      <span class="stat-item__value">100%</span>
+      <span class="stat-item__label">Fait maison</span>
+    </div>
+    <div class="stats-strip__divider" aria-hidden="true"></div>
+    <div class="stat-item" data-reveal data-delay="3">
+      <span class="stat-item__value">€€</span>
+      <span class="stat-item__label">Accessible</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section class="section about" id="la-table" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about__grid">
+
+      <div class="about__text">
+        <p class="label" id="about-label" data-reveal>La table</p>
+        <h2 id="about-title" data-reveal data-delay="1">Cuisine maison,<br>produits du terroir</h2>
+        <p id="about-text-1" data-reveal data-delay="2">Chez Morane et Mylène, la cuisine rend hommage aux saisons, aux producteurs, aux convives. Chaque assiette raconte une histoire locale, composée à quelques kilomètres d'ici.</p>
+        <p id="about-text-2" data-reveal data-delay="3">Au premier étage du Passage du Rocher, dans le cœur de Pornic, MOW&amp;MY vous accueille du mardi au dimanche pour le café, le déjeuner et le brunch du dimanche. Végétarien, vegan, flexitarien ? Cette adresse est faite pour vous. Si vous avez une contrainte alimentaire, n'hésitez pas à leur demander.</p>
+
+        <div data-reveal data-delay="4" style="display:flex;flex-wrap:wrap;gap:var(--s2);margin-block:var(--s4);">
+          <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:var(--t-xs);font-weight:600;letter-spacing:.04em;padding:.35rem .75rem;border-radius:var(--radius-pill);background:var(--leaf-pale);color:var(--leaf);">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Produits bio &amp; locaux</span>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:var(--t-xs);font-weight:600;letter-spacing:.04em;padding:.35rem .75rem;border-radius:var(--radius-pill);background:var(--leaf-pale);color:var(--leaf);">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>100% fait maison</span>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:var(--t-xs);font-weight:600;letter-spacing:.04em;padding:.35rem .75rem;border-radius:var(--radius-pill);background:var(--leaf-pale);color:var(--leaf);">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Anti-gaspillage</span>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:var(--t-xs);font-weight:600;letter-spacing:.04em;padding:.35rem .75rem;border-radius:var(--radius-pill);background:var(--leaf-pale);color:var(--leaf);">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Compostage &amp; tri</span>
+          </span>
+          <span style="display:inline-flex;align-items:center;gap:.4rem;font-size:var(--t-xs);font-weight:600;letter-spacing:.04em;padding:.35rem .75rem;border-radius:var(--radius-pill);background:var(--leaf-pale);color:var(--leaf);">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Bouteilles consignées</span>
+          </span>
+        </div>
+
+        <ul class="feature-list" data-reveal data-delay="5">
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Végétarien, vegan &amp; options sans gluten sur demande</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Produits frais, locaux et principalement bio</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Plats à emporter disponibles du mardi au dimanche</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Brunch d'hiver chaque dimanche (oct. au mars)</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Terrasse · Animaux bienvenus · Accessible PMR</span>
+          </li>
+          <li>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Menu enfant · Chaises hautes · Chauffe-biberon · Poussette</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about__gallery" data-reveal data-delay="2">
+        <img src="assets/uploads/tapisserie.webp"    alt="Tapisserie murale botanique MOW&amp;MY"  loading="lazy">
+        <img src="assets/uploads/café.webp"         alt="Latte en verre cristal, ambiance café"   loading="lazy">
+        <img src="assets/uploads/interieur%202.webp" alt="Salle lumineuse du restaurant"          loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MENU ── -->
+<section class="section" id="la-carte" aria-labelledby="menu-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <p class="label" id="menu-label" data-reveal>La carte</p>
+      <h2 id="menu-title" data-reveal data-delay="1">Ce qu'on cuisine</h2>
+      <p class="section-header__sub" id="menu-sub" data-reveal data-delay="2">Carte courte, produits frais. La carte évolue au fil des saisons et des arrivages.</p>
+    </div>
+
+    <div class="menu__grid">
+
+      <div data-reveal data-delay="1">
+        <h3 class="menu__category-title">Entrées</h3>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Salade de pommes, céleri-rave et betterave</span>
+              <span class="menu__item-desc">Marinés au vinaigre de cidre, vinaigrette moutarde</span>
+              <span class="diet">V VG</span>
+            </div>
+            <span class="menu__item-price">5,50 €</span>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Rouleau de printemps, houmous pois chiche</span>
+              <span class="menu__item-desc">Trilogie de carottes, sauce cacahuète</span>
+              <span class="diet">V VG</span>
+            </div>
+            <span class="menu__item-price">7,00 €</span>
+          </li>
+        </ul>
+      </div>
+
+      <div data-reveal data-delay="2">
+        <h3 class="menu__category-title">Plats</h3>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Tartine asperges blanches &amp; œuf mollet</span>
+              <span class="menu__item-desc">Mayonnaise à la truffe, crudités, salade</span>
+              <span class="diet">V</span>
+            </div>
+            <span class="menu__item-price">15,50 €</span>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Paupiette de poulet, cheddar et bacon</span>
+              <span class="menu__item-desc">Champignons, purée maison, sauce moutarde</span>
+            </div>
+            <span class="menu__item-price">17,00 €</span>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Milloto aux champignons bruns</span>
+              <span class="menu__item-desc">Oignons rouges, persil</span>
+              <span class="diet">V</span>
+            </div>
+            <span class="menu__item-price">14,00 €</span>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Lasagne végétalienne à la betterave</span>
+              <span class="menu__item-desc">Poireaux, ricotta végétale, ciboulette, salade verte</span>
+              <span class="diet">V VG</span>
+            </div>
+            <span class="menu__item-price">15,50 €</span>
+          </li>
+        </ul>
+      </div>
+
+      <div data-reveal data-delay="3">
+        <h3 class="menu__category-title">Du moment</h3>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Salade italienne à la burrata</span>
+              <span class="menu__item-desc">Tartines saisonnières, coup de cœur de l'été</span>
+              <span class="diet">V</span>
+            </div>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Cheesecake caramel-spéculos</span>
+              <span class="menu__item-desc">Pâtisserie maison signature</span>
+              <span class="diet">V</span>
+            </div>
+          </li>
+        </ul>
+
+        <hr class="divider">
+        <h3 class="menu__category-title" style="margin-top:0;">Boissons</h3>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Café filtre, expresso, latte</span>
+              <span class="menu__item-desc">Torréfaction artisanale</span>
+              <span class="diet">V VG</span>
+            </div>
+            <span class="menu__item-price">2,50 à 4 €</span>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Jus de fruits frais 100% français</span>
+              <span class="diet">V VG</span>
+            </div>
+            <span class="menu__item-price">4,50 €</span>
+          </li>
+          <li class="menu__item">
+            <div class="menu__item-info">
+              <span class="menu__item-name">Chaï latte maison</span>
+              <span class="menu__item-desc">Épices moulues à la commande</span>
+              <span class="diet">V</span>
+            </div>
+            <span class="menu__item-price">4 €</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="menu__legend">
+      <span class="diet">V</span> Végétarien &nbsp;·&nbsp;
+      <span class="diet">VG</span> Végétalien &nbsp;·&nbsp;
+      Carte selon arrivages, mise à jour régulièrement
+    </p>
+  </div>
+</section>
+
+<!-- ── BRUNCH ── -->
+<section class="section brunch" id="brunch" aria-labelledby="brunch-title">
+  <div class="container">
+    <div class="brunch__inner">
+
+      <div class="brunch__text">
+        <p class="label" id="brunch-label" data-reveal>Chaque dimanche</p>
+        <h2 id="brunch-title" data-reveal data-delay="1">Brunch d'hiver</h2>
+        <span class="brunch__dates" data-reveal data-delay="2">1<sup>er</sup> octobre au 31 mars &nbsp;·&nbsp; 8 à 15 €</span>
+        <p id="brunch-text" data-reveal data-delay="3">Le dimanche matin, MOW&amp;MY se transforme. Un moment de douceur collective autour de la table, de l'avocado toast aux pancakes, du smoothie bowl au chaï latte maison. Réservation recommandée.</p>
+        <a class="btn btn--primary" href="#reserver" data-reveal data-delay="4">Réserver pour le brunch</a>
+      </div>
+
+      <div class="brunch__items" aria-label="Ce qu'on sert au brunch" data-reveal data-delay="2">
+        <div class="brunch__item">Avocado toasts</div>
+        <div class="brunch__item">Œufs Bénédicte</div>
+        <div class="brunch__item">Pancakes moelleux</div>
+        <div class="brunch__item">Smoothie bowls</div>
+        <div class="brunch__item">Jus frais 100 % français</div>
+        <div class="brunch__item">Café &amp; chaï latte</div>
+      </div>
+
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);margin-top:var(--s6);border-radius:var(--radius-lg);overflow:hidden;" data-reveal data-delay="3">
+      <img src="assets/uploads/oeuf-bacon.webp" alt="Œufs Bénédicte, hollandaise et bacon" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+      <img src="assets/uploads/pancake.webp"      alt="Pancakes moelleux aux pommes de grenade" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+      <img src="assets/uploads/café%202.webp" alt="Iced latte avec carte MOW&amp;MY" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- ── ÉQUIPE ── -->
+<section class="section team" id="equipe" aria-labelledby="team-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <p class="label" data-reveal>Qui sommes-nous</p>
+      <h2 id="team-title" data-reveal data-delay="1">Derrière les assiettes</h2>
+      <p class="section-header__sub" data-reveal data-delay="2">MOW&amp;MY, c'est le projet de deux amies qui partagent la même vision, une cuisine sincère, de saison, et un lieu où il fait bon rester.</p>
+    </div>
+
+    <div class="team__grid">
+      <article class="team-card" data-reveal data-delay="1">
+        <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #d88b55 0%, #bd6124 100%);">
+          M
+        </div>
+        <div class="team-card__body">
+          <span class="team-card__role">Co-fondatrice · Cuisine</span>
+          <h3 class="team-card__name">Morane</h3>
+          <p class="team-card__bio">Passionnée par les légumes de saison et les saveurs qui surprennent. Morane compose la carte avec ce qu'elle trouve chez les producteurs locaux, semaine après semaine.</p>
+        </div>
+      </article>
+
+      <article class="team-card" data-reveal data-delay="2">
+        <div class="team-card__photo-placeholder" style="background: linear-gradient(135deg, #607348 0%, #4a5934 100%);">
+          M
+        </div>
+        <div class="team-card__body">
+          <span class="team-card__role">Co-fondatrice · Salle &amp; café</span>
+          <h3 class="team-card__name">Mylène</h3>
+          <p class="team-card__bio">C'est elle qui vous accueille et qui vous concocte le café parfait. Mylène tient la salle avec autant de soin que Morane met dans ses assiettes.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section class="section gallery" id="galerie" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <p class="label" data-reveal>En images</p>
+      <h2 id="gallery-title" data-reveal data-delay="1">Le restaurant</h2>
+    </div>
+
+    <div class="gallery__slider">
+      <button class="gallery__btn gallery__btn--prev" id="galleryPrev" aria-label="Photos précédentes">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="gallery__track" id="galleryTrack">
+      <a class="gallery__item" href="#" data-lightbox="0" data-reveal data-delay="1" aria-label="Photo 1">
+        <img src="assets/uploads/interieur%202.webp" alt="Salle lumineuse du restaurant, vue sur Pornic" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="1" data-reveal data-delay="2" aria-label="Photo 2">
+        <img src="assets/uploads/interieur.webp" alt="Espace salon avec table communautaire" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="2" data-reveal data-delay="3" aria-label="Photo 3">
+        <img src="assets/uploads/plats.webp" alt="Rouleaux de printemps, sauce cacahuète" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="3" data-reveal data-delay="4" aria-label="Photo 4">
+        <img src="assets/uploads/plats2.webp" alt="Plat signature du brunch MOW&amp;MY" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="4" data-reveal data-delay="5" aria-label="Photo 5">
+        <img src="assets/resto-2.webp" alt="Intérieur chaleureux du restaurant" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="5" data-reveal data-delay="6" aria-label="Photo 6">
+        <img src="assets/resto-1.webp" alt="Ambiance du restaurant MOW&amp;MY" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="6" data-reveal data-delay="1" aria-label="Photo 7">
+        <img src="assets/salade.webp" alt="Salade fraîche maison" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="7" data-reveal data-delay="2" aria-label="Photo 8">
+        <img src="assets/cake.webp" alt="Pâtisserie maison du jour" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="8" data-reveal data-delay="3" aria-label="Photo 9">
+        <img src="assets/uploads/tapisserie.webp" alt="Tapisserie murale botanique MOW&amp;MY" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="9" data-reveal data-delay="4" aria-label="Photo 10">
+        <img src="assets/uploads/cake.webp" alt="Cake épices, cream cheese et cranberries" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="10" data-reveal data-delay="5" aria-label="Photo 11">
+        <img src="assets/uploads/deserts.webp" alt="Cheesecake et tarte aux fruits, vue du dessus" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="11" data-reveal data-delay="6" aria-label="Photo 12">
+        <img src="assets/uploads/salade.webp" alt="Salade avec billes de fromage frites" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="12" data-reveal data-delay="1" aria-label="Photo 13">
+        <img src="assets/uploads/salade2.webp" alt="Tarte aux noix et salade sur assiette sombre" loading="lazy">
+      </a>
+      <a class="gallery__item" href="#" data-lightbox="13" data-reveal data-delay="2" aria-label="Photo 14">
+        <img src="assets/uploads/café.webp" alt="Latte en verre cristal, ambiance terrasse" loading="lazy">
+      </a>
+      </div>
+      <button class="gallery__btn gallery__btn--next" id="galleryNext" aria-label="Photos suivantes">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <p class="gallery__instagram-cta" data-reveal>
+      <a class="btn btn--outline" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <span>Voir toutes les photos sur Instagram</span>
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualisation photo">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Photo précédente">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Photo suivante">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <span class="lightbox__counter" id="lightboxCounter"></span>
+</div>
+
+<!-- ── REVIEWS ── -->
+<section class="section reviews" id="avis" aria-labelledby="reviews-title">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <p class="label" data-reveal>Ce qu'on dit de nous</p>
+      <h2 id="reviews-title" data-reveal data-delay="1">Avis clients</h2>
+    </div>
+
+    <div class="reviews__grid">
+
+      <article class="review-card" data-reveal data-delay="1">
+        <span class="review-card__quote-mark" aria-hidden="true">"</span>
+        <div class="review-card__stars" aria-label="5 étoiles sur 5">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-card__text">
+          Une vraie nourriture faite maison, avec amour et des bons produits. Très gentil service dans une ambiance conviviale. Cela vaut vraiment la peine de trouver ce restaurant discret caché dans une impasse en haut d'un escalier. C'est tellement mieux que les pièges à touristes et leurs sempiternels repas. Bravo et merci les filles !
+        </p>
+        <div class="review-card__author">
+          <div class="review-card__avatar" aria-hidden="true">EM</div>
+          <div>
+            <p class="review-card__name">Eric Moulart</p>
+            <p class="review-card__source">Local Guide · il y a 2 mois</p>
+          </div>
+          <span class="review-card__platform">Google</span>
+        </div>
+      </article>
+
+      <article class="review-card" data-reveal data-delay="2">
+        <span class="review-card__quote-mark" aria-hidden="true">"</span>
+        <div class="review-card__stars" aria-label="5 étoiles sur 5">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-card__text">
+          Très belle expérience dans ce restaurant café. Il propose de vraies options pour les végétariens et les véganes, ce qui est très appréciable. J'ai choisi un parmentier de patate douce aux cinq lentilles avec des champignons, absolument délicieux. En dessert, le cheesecake caramel et speculoos était lui aussi très bon. Le lieu est très cosy. Je recommande sans hésiter.
+        </p>
+        <div class="review-card__author">
+          <div class="review-card__avatar" aria-hidden="true">LZ</div>
+          <div>
+            <p class="review-card__name">Loïse Zacher</p>
+            <p class="review-card__source">Local Guide · il y a 4 mois</p>
+          </div>
+          <span class="review-card__platform">Google</span>
+        </div>
+      </article>
+
+      <article class="review-card" data-reveal data-delay="3">
+        <span class="review-card__quote-mark" aria-hidden="true">"</span>
+        <div class="review-card__stars" aria-label="5 étoiles sur 5">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-card__text">
+          Une découverte au détour d'une promenade… une belle surprise ! C'était DÉLICIEUX, du début à la fin. La soupe de la cheffe, le curry de choux fleurs, le gratin de poireaux et pommes de terre (une tuerie), et le cheesecake caramel spéculos partagé. Le lieu est accueillant et chaleureux, le service est parfait. Nous reviendrons avec plaisir !
+        </p>
+        <div class="review-card__author">
+          <div class="review-card__avatar" aria-hidden="true">AD</div>
+          <div>
+            <p class="review-card__name">Anne-Claire Dilé</p>
+            <p class="review-card__source">il y a 3 mois</p>
+          </div>
+          <span class="review-card__platform">Google</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── INSTAGRAM STRIP ── -->
+<div class="insta-strip">
+  <div class="container">
+    <div class="insta-strip__header">
+      <a class="insta-strip__handle" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @mowandmy">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        @mowandmy
+      </a>
+      <a class="btn btn--ghost btn--sm" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer">
+        <span>Suivre</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+    <div class="insta-strip__row">
+      <a class="insta-strip__post" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer" aria-label="Post Instagram 1">
+        <img src="assets/uploads/deserts.webp" alt="Cheesecake et tarte aux fruits maison" loading="lazy">
+        <div class="insta-strip__post__overlay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      </a>
+      <a class="insta-strip__post" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer" aria-label="Post Instagram 2">
+        <img src="assets/uploads/café.webp" alt="Latte en verre cristal" loading="lazy">
+        <div class="insta-strip__post__overlay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      </a>
+      <a class="insta-strip__post" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer" aria-label="Post Instagram 3">
+        <img src="assets/uploads/pancake.webp" alt="Pancakes moelleux du brunch" loading="lazy">
+        <div class="insta-strip__post__overlay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      </a>
+      <a class="insta-strip__post" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer" aria-label="Post Instagram 4">
+        <img src="assets/uploads/tapisserie.webp" alt="Tapisserie murale botanique MOW&amp;MY" loading="lazy">
+        <div class="insta-strip__post__overlay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      </a>
+      <a class="insta-strip__post" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer" aria-label="Post Instagram 5">
+        <img src="assets/uploads/salade2.webp" alt="Tarte aux noix et salade sur assiette sombre" loading="lazy">
+        <div class="insta-strip__post__overlay" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── RESERVATION ── -->
+<section class="section reserve" id="reserver" aria-labelledby="reserve-title">
+  <div class="container container--narrow">
+    <div class="section-header section-header--center">
+      <p class="label" data-reveal>Réservation en ligne</p>
+      <h2 id="reserve-title" data-reveal data-delay="1">Réserver une table</h2>
+      <p class="section-header__sub" data-reveal data-delay="2">Pour le déjeuner ou le brunch du dimanche. Nous vous confirmons par email dans les 24h.</p>
+    </div>
+
+    <form class="reserve__form form-stack" id="reservationForm" novalidate data-reveal data-delay="2">
+      <div class="form-row form-row--2">
+        <div class="form-field">
+          <label for="r-name"><span>Nom &amp; prénom</span> <sup>*</sup></label>
+          <input id="r-name" type="text" name="name" autocomplete="name" required placeholder="Marie Dupont">
+        </div>
+        <div class="form-field">
+          <label for="r-email"><span>Adresse email</span> <sup>*</sup></label>
+          <input id="r-email" type="email" name="email" autocomplete="email" required placeholder="marie@exemple.fr">
+        </div>
+      </div>
+
+      <div class="form-row form-row--2">
+        <div class="form-field">
+          <label for="r-phone"><span>Téléphone</span> <sup>*</sup></label>
+          <input id="r-phone" type="tel" name="phone" autocomplete="tel" required placeholder="06 12 34 56 78">
+        </div>
+        <div class="form-field">
+          <label for="r-covers"><span>Nombre de couverts</span> <sup>*</sup></label>
+          <select id="r-covers" name="covers" required>
+            <option value="">Choisir…</option>
+            <option value="1">1 personne</option>
+            <option value="2">2 personnes</option>
+            <option value="3">3 personnes</option>
+            <option value="4">4 personnes</option>
+            <option value="5">5 personnes</option>
+            <option value="6">6 ou plus</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row form-row--2">
+        <div class="form-field">
+          <label for="r-date"><span>Date souhaitée</span> <sup>*</sup></label>
+          <input id="r-date" type="date" name="date" required>
+        </div>
+        <div class="form-field">
+          <label for="r-service"><span>Service</span> <sup>*</sup></label>
+          <select id="r-service" name="service" required>
+            <option value="12:00">Déjeuner, 12h</option>
+            <option value="13:00">Déjeuner, 13h</option>
+            <option value="11:00">Brunch du dimanche, 11h</option>
+            <option value="15:30">Café / goûter</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="r-message">Message (optionnel)</label>
+        <textarea id="r-message" name="notes" rows="3" placeholder="Allergie, chaise haute, occasion spéciale, chien…"></textarea>
+      </div>
+
+      <button class="btn btn--primary btn--full" type="submit" id="submitBtn">
+        Envoyer la demande
+      </button>
+
+      <p class="form-note">
+        <span>Nous confirmons chaque demande par email.</span>
+        <a href="mailto:mowandmy@gmail.com">mowandmy@gmail.com</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ── VISIT ── -->
+<section class="section" id="venir" aria-labelledby="visit-title">
+  <div class="container">
+    <div class="visit__grid">
+
+      <div data-reveal>
+        <p class="label">Nous trouver</p>
+        <h2 id="visit-title">Venir chez<br>MOW&amp;MY</h2>
+        <address class="visit__address">
+          26 rue de la Marine<br>
+          1<sup>er</sup> étage du Passage du Rocher<br>
+          44210 Pornic
+        </address>
+        <p style="font-size:var(--t-sm);color:var(--ink-60);margin-bottom:var(--s4);line-height:1.7;">
+          À 150 m du centre-ville<br>
+          400 m de la gare de Pornic<br>
+          500 m de la mer
+        </p>
+        <div style="display:flex;gap:var(--s2);flex-wrap:wrap;">
+          <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&query=MOW%26MY%2026%20rue%20de%20la%20Marine%20Pornic" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Google Maps
+          </a>
+          <a class="btn btn--ghost" href="#reserver">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Réserver</span>
+          </a>
+        </div>
+      </div>
+
+      <div data-reveal data-delay="2">
+        <p class="label">Horaires d'ouverture</p>
+        <table class="hours-table" aria-label="Horaires MOW&amp;MY">
+          <tbody>
+            <tr class="closed">
+              <td>Lundi</td>
+              <td>Fermé</td>
+            </tr>
+            <tr class="open">
+              <td>Mardi au vendredi</td>
+              <td class="hours-open">9h à 19h</td>
+            </tr>
+            <tr class="open">
+              <td>Samedi</td>
+              <td class="hours-open">9h à 19h</td>
+            </tr>
+            <tr class="open">
+              <td>Dimanche</td>
+              <td class="hours-open">9h à 19h</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="hours-note hours-kitchen-note">Cuisine servie de 12h à 14h</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="visit-note">
+          Brunch d'hiver chaque dimanche du 1<sup>er</sup> oct. au 31 mars · 8 à 15 €
+        </p>
+
+        <div style="margin-top:var(--s4);padding:var(--s3) var(--s4);background:var(--ink-06);border-radius:var(--radius-md);">
+          <p style="font-size:var(--t-sm);font-weight:600;margin-bottom:var(--s1);">Infos pratiques</p>
+          <ul style="display:flex;flex-direction:column;gap:.5rem;font-size:var(--t-sm);color:var(--ink-60);">
+            <li style="display:flex;align-items:center;gap:.5rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>Accessible PMR · Poussette</span></li>
+            <li style="display:flex;align-items:center;gap:.5rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>Animaux bienvenus</span></li>
+            <li style="display:flex;align-items:center;gap:.5rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>Menu enfant · Chaises hautes · Chauffe-biberon</span></li>
+            <li style="display:flex;align-items:center;gap:.5rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>Terrasse extérieure</span></li>
+            <li style="display:flex;align-items:center;gap:.5rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>Plats à emporter mar. au dim.</span></li>
+            <li style="display:flex;align-items:center;gap:.5rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>Service en continu avr. au sept. &amp; sam./dim.</span></li>
+            <li style="display:flex;align-items:center;gap:.5rem;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> <span>CB, espèces, tickets resto</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer" aria-label="Pied de page MOW&amp;MY">
+  <div class="container">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="site-logo" href="#top" aria-label="MOW&amp;MY accueil">
+          <img src="assets/logo-rond.webp" width="32" height="32" alt="">
+          <span>MOW&amp;MY</span>
+        </a>
+        <p class="footer-desc">
+          Restaurant coffee shop végétarien, vegan &amp; bio.<br>
+          Tenu par Morane &amp; Mylène à Pornic.
+        </p>
+        <a class="footer-instagram" href="https://www.instagram.com/mowandmy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @mowandmy">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @mowandmy
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-title">Infos pratiques</p>
+        <address class="footer-address">
+          26 rue de la Marine<br>
+          1er étage du Passage du Rocher<br>
+          44210 Pornic
+        </address>
+        <p class="footer-hours">Mardi au dimanche · 9h-19h<br>Cuisine de 12h à 14h</p>
+      </div>
+
+      <nav class="footer-column footer-links" aria-label="Liens footer">
+        <p class="footer-title">Accès rapide</p>
+        <a href="#la-carte">La carte</a>
+        <a href="#brunch">Brunch</a>
+        <a href="#reserver">Réserver</a>
+        <a href="loyalty.html">Carte fidélité</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 MOW&amp;MY · 26 rue de la Marine, 44210 Pornic · Fermé le lundi</p>
+      <div class="footer-contact">
+        <a href="mailto:mowandmy@gmail.com">mowandmy@gmail.com</a>
+        <a href="tel:+33984674099">09 84 67 40 99</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── TOAST STACK ── -->
+<div class="toast-stack" id="toastStack" aria-live="polite" aria-label="Notifications"></div>
+
+<script>
+/* ═══════════════════════════════════════════════════
+   MOW&MY v2 — Site JS
+   CMS · Scroll-reveal · Nav · Lightbox · Slider
+   Cookie · Form · Toast
+═══════════════════════════════════════════════════ */
+
+document.body.classList.add('js-loaded');
+
+/* ── CMS content ─────────────────────────────────── */
+let cmsContent = null;
+
+function cmsEscape(value) {
+  return String(value ?? '').replace(/[&<>"']/g, char => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  }[char]));
+}
+
+function cmsSet(selector, value, html = false) {
+  const el = document.querySelector(selector);
+  if (!el || value === undefined || value === null) return;
+  el[html ? 'innerHTML' : 'textContent'] = value;
+}
+
+function cmsSetAll(selector, value, html = false) {
+  if (value === undefined || value === null) return;
+  document.querySelectorAll(selector).forEach(el => {
+    el[html ? 'innerHTML' : 'textContent'] = value;
+  });
+}
+
+function cmsAttr(selector, attr, value) {
+  const el = document.querySelector(selector);
+  if (!el || !value) return;
+  el.setAttribute(attr, value);
+}
+
+function cmsAttrAll(selector, attr, value) {
+  if (!value) return;
+  document.querySelectorAll(selector).forEach(el => el.setAttribute(attr, value));
+}
+
+function normalizeCmsUrl(url) {
+  const map = {
+    '#savoir-faire': '#la-table',
+    '#carte': '#la-carte',
+    '#reservation': '#reserver'
+  };
+  return map[url] || url;
+}
+
+function setMeta(selector, value) {
+  cmsAttr(selector, 'content', value);
+}
+
+function applyCmsContent(content) {
+  if (!content) return;
+  cmsContent = content;
+
+  if (content.seo?.title) document.title = content.seo.title;
+  setMeta('meta[name="description"]', content.seo?.description);
+  setMeta('meta[property="og:title"]', content.seo?.og_title || content.seo?.title);
+  setMeta('meta[property="og:description"]', content.seo?.og_description || content.seo?.description);
+  setMeta('meta[property="og:image"]', content.seo?.og_image);
+  setMeta('meta[name="twitter:description"]', content.seo?.twitter_description);
+  cmsAttr('link[rel="canonical"]', 'href', content.site?.canonical);
+
+  cmsSetAll('.site-logo span', content.site?.name || content.restaurant?.name);
+  cmsAttrAll('.site-logo img', 'src', content.site?.logo);
+
+  if (Array.isArray(content.navigation)) {
+    const nav = document.querySelector('.site-nav');
+    const footerLinks = document.querySelector('.footer-links');
+    const items = content.navigation
+      .filter(item => item?.label && item?.url)
+      .map(item => ({ label: item.label, url: normalizeCmsUrl(item.url) }));
+    const hasLoyalty = items.some(item => item.url === 'loyalty.html' || item.label.toLowerCase().includes('fidélité'));
+    if (!hasLoyalty) items.push({ label: 'Fidélité', url: 'loyalty.html' });
+    if (nav && items.length) {
+      nav.innerHTML = items.map(item => `<a href="${cmsEscape(item.url)}">${cmsEscape(item.label)}</a>`).join('');
+    }
+    if (footerLinks && items.length) {
+      const title = footerLinks.querySelector('.footer-title')?.outerHTML || '<p class="footer-title">Accès rapide</p>';
+      footerLinks.innerHTML = title + items.map(item => `<a href="${cmsEscape(item.url)}">${cmsEscape(item.label)}</a>`).join('') + '<a href="confidentialite.html">Confidentialité</a>';
+    }
+  }
+
+  cmsSet('.hero .eyebrow', content.hero?.overline);
+  cmsSet('#hero-title', content.hero?.title);
+  cmsSet('.hero__baseline', content.hero?.baseline);
+  cmsSet('.hero__sub', content.hero?.intro || content.hero?.baseline, true);
+  if (content.restaurant?.street_address || content.restaurant?.city) {
+    cmsSet('.hero__address', `${content.restaurant?.street_address || ''}${content.restaurant?.city ? ` · ${content.restaurant.city}` : ''}`, true);
+  }
+  cmsAttr('.hero__media img', 'src', content.hero?.image);
+  cmsAttr('.hero__media img', 'alt', content.hero?.image_alt);
+  const heroButtons = document.querySelectorAll('.hero__cta a');
+  if (heroButtons[0]) {
+    const primaryLabel = heroButtons[0].querySelector('span');
+    if (primaryLabel) primaryLabel.textContent = content.hero?.primary_cta_label || primaryLabel.textContent;
+    heroButtons[0].href = content.hero?.primary_cta_url || heroButtons[0].href;
+  }
+  if (heroButtons[1]) {
+    heroButtons[1].textContent = content.hero?.secondary_cta_label || heroButtons[1].textContent;
+    heroButtons[1].href = content.hero?.secondary_cta_url || heroButtons[1].href;
+  }
+  const serviceLine = document.querySelector('.hero__service-line');
+  if (serviceLine && Array.isArray(content.hero?.quick_infos)) {
+    serviceLine.innerHTML = content.hero.quick_infos.map(item => `<span>${cmsEscape(item)}</span>`).join('');
+  }
+
+  if (content.menu) {
+    cmsSet('#menu-label', content.menu.overline);
+    cmsSet('#menu-title', `${content.menu.title_before || ''}${content.menu.title_highlight || ''}${content.menu.title_after || ''}`);
+    cmsSet('#menu-sub', content.menu.note);
+    const grid = document.querySelector('.menu__grid');
+    const menuSections = Array.isArray(content.menu.sections)
+      ? content.menu.sections.filter(section => section?.title || section?.items?.length)
+      : [];
+    if (grid && menuSections.length) {
+      grid.innerHTML = menuSections.map(section => `
+        <div>
+          <h3 class="menu__category-title">${cmsEscape(section.title)}</h3>
+          <ul class="menu__list">
+            ${(section.items || []).map(item => `
+              <li class="menu__item">
+                <div class="menu__item-info">
+                  <span class="menu__item-name">${cmsEscape(item.name)}</span>
+                  ${item.desc ? `<span class="menu__item-desc">${cmsEscape(item.desc)}</span>` : ''}
+                  ${item.diet ? `<span class="diet">${cmsEscape(item.diet)}</span>` : ''}
+                </div>
+                ${item.price ? `<span class="menu__item-price">${cmsEscape(item.price)}</span>` : ''}
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      `).join('');
+    }
+  }
+
+  if (content.craft) {
+    cmsSet('#about-label', content.craft.overline);
+    cmsSet('#about-title', `${content.craft.title_before || ''}${content.craft.title_highlight || ''}${content.craft.title_after || ''}`, true);
+    const cards = Array.isArray(content.craft.cards) ? content.craft.cards : [];
+    cmsSet('#about-text-1', cards[0]?.text, true);
+    cmsSet('#about-text-2', cards[1]?.text, true);
+    const featureList = document.querySelector('.feature-list');
+    if (featureList && cards.length) {
+      featureList.innerHTML = cards.map(card => `
+        <li>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>${cmsEscape(card.title || card.tag || '')}</span>
+        </li>
+      `).join('');
+    }
+  }
+
+  if (content.brunch) {
+    cmsSet('#brunch-label', content.brunch.overline);
+    cmsSet('#brunch-title', `${content.brunch.title_before || ''}${content.brunch.title_highlight || ''}${content.brunch.title_after || ''}`);
+    const brunchText = document.querySelector('#brunch-text');
+    if (brunchText && Array.isArray(content.brunch.paragraphs)) brunchText.innerHTML = content.brunch.paragraphs.join('<br><br>');
+    const brunchCta = document.querySelector('.brunch__text .btn');
+    if (brunchCta) {
+      brunchCta.textContent = content.brunch.cta_label || brunchCta.textContent;
+      brunchCta.href = content.brunch.cta_url || brunchCta.href;
+    }
+  }
+
+  if (content.gallery?.length) {
+    const track = document.querySelector('#galleryTrack');
+    if (track) {
+      track.innerHTML = content.gallery.map((item, index) => `
+        <a class="gallery__item" href="#" data-lightbox="${index}" aria-label="Photo ${index + 1}">
+          <img src="${cmsEscape(item.image)}" alt="${cmsEscape(item.alt)}" loading="lazy">
+        </a>
+      `).join('');
+      window.refreshGalleryImages?.();
+    }
+  }
+
+  if (content.restaurant || content.visit) {
+    cmsSet('#visit-title', content.visit?.title, true);
+    cmsSet('#venir .label', content.visit?.overline);
+    cmsSet('.visit__address', content.visit?.address_line || (content.restaurant?.street_address ? `${content.restaurant.street_address}<br>${content.restaurant.postal_code || ''} ${content.restaurant.city || ''}` : ''), true);
+    cmsSetAll('.hours-open', content.restaurant?.opening_hours);
+    cmsSet('.hours-kitchen-note', content.restaurant?.kitchen_hours ? `Cuisine servie de ${content.restaurant.kitchen_hours}` : undefined);
+    cmsSet('.visit-note', content.restaurant?.brunch_hours ? `Brunch ${content.restaurant.brunch_hours}` : undefined);
+    cmsAttr('iframe[src*="google.com/maps"]', 'src', content.restaurant?.maps_embed_url);
+    cmsAttr('iframe[src*="google.com/maps"]', 'title', content.visit?.map_title);
+    document.querySelectorAll('a[href*="google.com/maps"]').forEach(link => {
+      if (content.restaurant?.maps_url) link.href = content.restaurant.maps_url;
+      const label = link.querySelector('span') || link;
+      if (content.visit?.map_button_label) label.textContent = content.visit.map_button_label;
+    });
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+      link.href = `tel:${content.restaurant?.phone_international || '+33984674099'}`;
+      if (link.textContent.includes('09') || link.textContent.includes('+33')) link.textContent = content.restaurant?.phone || link.textContent;
+    });
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+      link.href = `mailto:${content.restaurant?.email || 'mowandmy@gmail.com'}`;
+      if (link.textContent.includes('@')) link.textContent = content.restaurant?.email || link.textContent;
+    });
+  }
+
+  if (content.reservation) {
+    cmsSet('#reserver .label', content.reservation.overline);
+    cmsSet('#reserve-title', content.reservation.title);
+    cmsSet('.form-note span', content.reservation.privacy_text);
+  }
+
+  if (content.footer) {
+    cmsSet('.footer-desc', content.footer.description, true);
+    cmsSet('.footer-address', content.footer.address_html, true);
+    cmsSet('.footer-hours', [content.footer.hours_html, content.footer.kitchen_html].filter(Boolean).join('<br>'), true);
+    cmsSet('.footer-column .footer-title', content.footer.address_title);
+    cmsSet('.footer-copy', content.footer.bottom);
+  }
+}
+
+async function loadCmsContent() {
+  try {
+    const response = await fetch(`/content/site.json?v=${Date.now()}`, {
+      cache: 'no-store',
+      headers: { 'Cache-Control': 'no-cache' }
+    });
+    if (!response.ok) return;
+    cmsContent = await response.json();
+    applyCmsContent(cmsContent);
+  } catch(e) { console.warn('CMS:', e); }
+}
+
+loadCmsContent();
+
+window.mowScrollTo = function(id) {
+  const target = document.getElementById(id);
+  if (!target) return true;
+  target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  if (history.pushState) history.pushState(null, '', `#${id}`);
+  return false;
+};
+
+/* ── Scroll reveal ────────────────────────────────── */
+const revealIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('is-visible');
+      revealIO.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('[data-reveal]').forEach(el => revealIO.observe(el));
+
+/* ── Nav toggle ───────────────────────────────────── */
+const navToggle = document.querySelector('.nav-toggle');
+const siteNav   = document.getElementById('siteNav');
+if (navToggle && siteNav) {
+  navToggle.addEventListener('click', () => {
+    const open = siteNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  siteNav.addEventListener('click', event => {
+    if (!event.target.closest('a')) return;
+    siteNav.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && siteNav.classList.contains('is-open')) {
+      siteNav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      navToggle.focus();
+    }
+  });
+}
+
+/* ── Active nav link on scroll ────────────────────── */
+const sections = document.querySelectorAll('section[id]');
+const navIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const navLinks  = document.querySelectorAll('.site-nav a');
+      navLinks.forEach(a => a.removeAttribute('aria-current'));
+      const link = document.querySelector(`.site-nav a[href="#${e.target.id}"]`);
+      if (link) link.setAttribute('aria-current', 'page');
+    }
+  });
+}, { threshold: 0.4 });
+sections.forEach(s => navIO.observe(s));
+
+/* ── Gallery slider ───────────────────────────────── */
+const galleryTrack = document.getElementById('galleryTrack');
+document.getElementById('galleryPrev')?.addEventListener('click', () => {
+  galleryTrack?.scrollBy({ left: -(galleryTrack.offsetWidth * 0.85), behavior: 'smooth' });
+});
+document.getElementById('galleryNext')?.addEventListener('click', () => {
+  galleryTrack?.scrollBy({ left: galleryTrack.offsetWidth * 0.85, behavior: 'smooth' });
+});
+
+/* ── Lightbox ─────────────────────────────────────── */
+const galleryLinks = document.querySelectorAll('[data-lightbox]');
+const lightbox     = document.getElementById('lightbox');
+const lightboxImg  = document.getElementById('lightboxImg');
+const lightboxCounter = document.getElementById('lightboxCounter');
+const galleryImages = Array.from(galleryLinks).map(a => {
+  const img = a.querySelector('img');
+  return { src: img?.src || a.href, alt: img?.alt || '' };
+});
+let currentLb = 0;
+window.refreshGalleryImages = function refreshGalleryImages() {
+  galleryImages.length = 0;
+  document.querySelectorAll('[data-lightbox]').forEach(a => {
+    const img = a.querySelector('img');
+    galleryImages.push({ src: img?.src || a.href, alt: img?.alt || '' });
+  });
+};
+function openLightbox(idx) {
+  if (!galleryImages.length) return;
+  currentLb = idx;
+  lightboxImg.src = galleryImages[idx].src;
+  lightboxImg.alt = galleryImages[idx].alt;
+  lightboxCounter.textContent = `${idx + 1} / ${galleryImages.length}`;
+  lightbox.classList.add('is-open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('lightboxClose').focus();
+}
+function closeLightbox() {
+  lightbox.classList.remove('is-open');
+  document.body.style.overflow = '';
+  galleryLinks[currentLb]?.focus();
+}
+function nextLightbox() { openLightbox((currentLb + 1) % galleryImages.length); }
+function prevLightbox() { openLightbox((currentLb - 1 + galleryImages.length) % galleryImages.length); }
+galleryTrack?.addEventListener('click', e => {
+  const link = e.target.closest('[data-lightbox]');
+  if (!link) return;
+  e.preventDefault();
+  openLightbox(Number(link.dataset.lightbox || 0));
+});
+document.getElementById('lightboxClose')?.addEventListener('click', closeLightbox);
+document.getElementById('lightboxNext')?.addEventListener('click', nextLightbox);
+document.getElementById('lightboxPrev')?.addEventListener('click', prevLightbox);
+lightbox?.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => {
+  if (!lightbox?.classList.contains('is-open')) return;
+  if (e.key === 'Escape')     closeLightbox();
+  if (e.key === 'ArrowRight') nextLightbox();
+  if (e.key === 'ArrowLeft')  prevLightbox();
+});
+
+/* ── Cookie banner ────────────────────────────────── */
+const cookieBanner = document.getElementById('cookieBanner');
+function hideCookieBanner(choice) {
+  localStorage.setItem('mw-cookie', choice);
+  cookieBanner?.classList.remove('is-visible');
+}
+if (!localStorage.getItem('mw-cookie')) {
+  setTimeout(() => cookieBanner?.classList.add('is-visible'), 1800);
+}
+document.getElementById('cookieAccept')?.addEventListener('click', () => hideCookieBanner('accepted'));
+document.getElementById('cookieRefuse')?.addEventListener('click', () => hideCookieBanner('refused'));
+
+/* ── Actu banner close ────────────────────────────── */
+document.getElementById('actuClose')?.addEventListener('click', () => document.getElementById('actuBanner')?.remove());
+
+/* ── Min date ─────────────────────────────────────── */
+const dateInput = document.getElementById('r-date');
+if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+
+/* ── Toast helper ─────────────────────────────────── */
+function showToast(msg, type = '') {
+  const stack = document.getElementById('toastStack');
+  const toast = document.createElement('div');
+  toast.className = `toast ${type ? 'is-' + type : ''}`;
+  toast.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">${type === 'success' ? '<polyline points="20 6 9 17 4 12"/>' : type === 'error' ? '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' : '<circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>'}</svg> ${msg}`;
+  stack?.appendChild(toast);
+  setTimeout(() => toast.remove(), 4500);
+}
+
+/* ── Reservation form ─────────────────────────────── */
+const reservationForm = document.getElementById('reservationForm');
+if (reservationForm) {
+  reservationForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    if (!reservationForm.reportValidity()) return;
+
+    const formData = new FormData(reservationForm);
+    const payload = {
+      name: String(formData.get('name') || '').trim(),
+      email: String(formData.get('email') || '').trim(),
+      phone: String(formData.get('phone') || '').trim(),
+      covers: String(formData.get('covers') || '').trim(),
+      date: String(formData.get('date') || '').trim(),
+      time: String(formData.get('service') || '').trim(),
+      notes: String(formData.get('notes') || '').trim()
+    };
+
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours...';
+    try {
+      const response = await fetch('/api/reservations', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || 'Erreur réservation');
+
+      btn.textContent = 'Demande envoyée !';
+      btn.style.background = 'var(--leaf)';
+      btn.style.borderColor = 'var(--leaf)';
+      showToast(`Demande envoyée. Code ${result.reservation?.code || 'MOW&MY'} : nous vous confirmons par email.`, 'success');
+      reservationForm.reset();
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = 'Envoyer la demande';
+        btn.style.background = '';
+        btn.style.borderColor = '';
+      }, 3000);
+    } catch {
+      btn.disabled = false;
+      btn.textContent = 'Réessayer';
+      showToast('Impossible d’envoyer la demande. Vérifiez la connexion Supabase/Vercel ou contactez-nous.', 'error');
+    }
+  });
+}
+</script>
+</body>
+</html>

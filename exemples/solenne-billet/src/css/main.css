@@ -1,0 +1,199 @@
+/* Modern CSS Reset & General Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+    padding-top: 80px; /* Leave space for the sticky navigation */
+}
+
+/* Headings Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-sm);
+}
+
+h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-md);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-sm);
+}
+
+p {
+    margin-bottom: var(--space-sm);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Accessibility skip link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--color-primary);
+    color: white;
+    padding: var(--space-sm);
+    z-index: 9999;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Containers and Layout Helpers */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+
+.max-width-medium {
+    max-width: var(--container-max-width-medium);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    position: relative;
+}
+
+/* Base Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-highlight { color: var(--color-primary); }
+
+.margin-bottom-small { margin-bottom: var(--space-sm); }
+.margin-bottom-medium { margin-bottom: var(--space-md); }
+.margin-bottom-large { margin-bottom: var(--space-lg); }
+
+.margin-top-small { margin-top: var(--space-sm); }
+.margin-top-medium { margin-top: var(--space-md); }
+.margin-top-large { margin-top: var(--space-lg); }
+
+.font-small { font-size: var(--font-size-sm); }
+.font-italic { font-style: italic; }
+
+.bg-alternate {
+    background-color: var(--color-bg-alternate);
+}
+
+.bullet-list {
+    list-style-type: disc;
+    margin-left: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.bullet-list li {
+    margin-bottom: var(--space-xs);
+}
+
+/* Section Subtitles */
+.section-subtitle {
+    display: inline-block;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.section-desc {
+    font-size: var(--font-size-md);
+    color: var(--color-text-light);
+}
+
+/* Global List Elements */
+.styled-list {
+    margin-bottom: var(--space-md);
+}
+
+.styled-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: var(--space-sm);
+}
+
+.styled-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+/* Large Grids */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    body {
+        padding-top: 90px;
+    }
+    
+    section {
+        padding-top: var(--space-2xl);
+        padding-bottom: var(--space-2xl);
+    }
+    
+    h1 { font-size: var(--font-size-4xl); }
+    h2 { font-size: var(--font-size-3xl); }
+}
