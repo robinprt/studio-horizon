@@ -2163,3 +2163,24 @@ button, input, select, textarea { font-family: inherit; color: inherit; backgrou
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* =============================================
+   CORRECTIFS MOBILE (23/11/2026)
+   Simulateur de démo utilisable et fermable sur téléphone,
+   bouton d'en-tête qui n'écrase plus le logo.
+   ============================================= */
+@media (max-width: 768px) {
+  .simulator-header { flex-wrap: wrap; gap: .6rem; padding: .8rem 1rem; }
+  .simulator-info { flex: 1 1 100%; min-width: 0; }
+  .simulator-title { font-size: 1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .simulator-controls { display: none; }
+  .simulator-actions { flex: 1 1 100%; gap: .5rem; }
+  .sim-action-btn { flex: 1; justify-content: center; text-align: center; padding: .7rem .5rem; }
+  .simulator-body { padding: 0; }
+  .iframe-container { width: 100% !important; height: 100% !important; border-radius: 0 !important; }
+}
+@media (max-width: 480px) {
+  .nav { gap: .75rem; }
+  .nav-brand { flex-shrink: 0; }
+  .nav-cta { padding: .6rem .8rem; font-size: .62rem; letter-spacing: .06em; gap: .4rem; white-space: nowrap; }
+}
