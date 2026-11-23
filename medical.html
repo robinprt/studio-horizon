@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de site web pour professionnels de santé (Ostéopathe, Kiné, Psy) | Studio Horizon</title>
+    <meta name="description" content="Sites vitrines rassurants, clairs et conformes pour les praticiens. Intégration de prise de rendez-vous en ligne (Doctolib, Calendly).">
+    <meta property="og:title" content="Création de site web pour professionnels de santé (Ostéopathe, Kiné, Psy) | Studio Horizon">
+    <meta property="og:description" content="Sites vitrines rassurants, clairs et conformes pour les praticiens. Intégration de prise de rendez-vous en ligne (Doctolib, Calendly).">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="grid-lines" aria-hidden="true">
+        <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+    </div>
+    <div class="bg-glow-orbs" aria-hidden="true">
+        <div class="glow-orb orb-1"></div><div class="glow-orb orb-2"></div><div class="glow-orb orb-3"></div>
+    </div>
+    <div class="preloader" id="preloader">
+        <span class="preloader-text">Studio Horizon</span>
+        <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <header class="nav" id="nav">
+        <a href="#hero" class="nav-brand">
+            <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 22C6 16.48 10.48 12 16 12C21.52 12 26 16.48 26 22H6Z" fill="url(#logo-grad-header)" />
+                <path d="M2 24H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                <defs>
+                    <linearGradient id="logo-grad-header" x1="6" y1="12" x2="26" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-gold)"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span>Horizon.</span>
+        </a>
+        <div class="nav-links">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#realisations" class="nav-link">Exemples</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <a href="#contact" class="nav-cta" id="headerCtaBtn">
+            <span>Parler de mon projet</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+        </a>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-grain"></div><div class="hero-glow"></div>
+            <canvas id="heroGridCanvas" class="hero-grid-canvas" aria-hidden="true"></canvas>
+            <div class="hero-blobs-container" aria-hidden="true">
+                <div class="hero-blob blob-cyan"></div><div class="hero-blob blob-blue"></div><div class="hero-blob blob-purple"></div><div class="hero-blob blob-left"></div>
+            </div>
+            <div class="hero-top">
+                <span class="hero-eyebrow"><span class="eyebrow-line"></span>CONFIANCE & PATIENTÈLE LOCALE</span>
+            </div>
+            <div class="hero-center">
+                <h1 class="hero-title" id="heroTitle">
+        <span class="hero-line">
+            <span class="word-wrap"><span class="word">Un</span></span>
+            <span class="word-wrap"><span class="word">site</span></span>
+            <span class="word-wrap"><span class="word italic">web</span></span>
+            <span class="word-wrap"><span class="word">rassurant</span></span>
+        </span>
+        <span class="hero-line">
+            <span class="word-wrap"><span class="word">pour</span></span>
+            <span class="word-wrap"><span class="word italic">développer</span></span>
+            <span class="word-wrap"><span class="word">votre</span></span>
+            <span class="word-wrap"><span class="word italic">cabinet.</span></span>
+        </span>
+    </h1>
+                <p class="hero-sub">Nous créons des sites vitrines épurés, clairs et performants pour les ostéopathes, psychologues, kinésithérapeutes et professionnels de santé. Conçus pour inspirer confiance et faciliter la prise de rendez-vous.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Recevoir une estimation gratuite</a>
+                    <a href="#realisations" class="btn btn-secondary">Voir les exemples de sites</a>
+                </div>
+            </div>
+            <div class="hero-proofs">
+                <div class="wrap">
+                    <div class="proofs-grid">
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                            <span>Parfaitement lisible sur mobile</span>
+                        </div>
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            <span>Optimisé pour le référencement local</span>
+                        </div>
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>Aucun abonnement caché</span>
+                        </div>
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                            <span>Structure pensée pour le contact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="constat-section" id="approche">
+            <div class="wrap">
+                <div class="constat-grid">
+                    <div class="constat-left reveal">
+                        <span class="section-label">— Constat &amp; Approche</span>
+                        <h2 class="section-title">Pourquoi la plupart des sites locaux <strong>ne rapportent rien</strong> ?</h2>
+                        <p class="section-desc">Un site internet ne doit pas seulement être une carte de visite en ligne. S'il n'inspire pas confiance, s'il est illisible sur mobile ou si vos clients ne peuvent pas vous contacter en un clic, vous perdez des opportunités chaque jour.</p>
+                        <p class="section-desc">Nous éliminons le superflu pour concevoir un outil de conversion rapide, épuré et optimisé pour votre activité locale.</p>
+                    </div>
+                    <div class="constat-right reveal" style="transition-delay: .15s">
+                        <div class="comparison-cards">
+                            <div class="comparison-card">
+                                <div class="comp-col comp-problem">
+                                    <span class="comp-badge status-bad">Erreurs classiques</span>
+                                    <p>Un site lent, surchargé d'informations inutiles, illisible sur mobile et sans appel à l'action visible.</p>
+                                </div>
+                                <div class="comp-col comp-solution">
+                                    <span class="comp-badge status-good">Notre standard</span>
+                                    <p>Design épuré, performances ultra-rapides, parcours pensé mobile-first et conversion directe.</p>
+                                </div>
+                            </div>
+                            <div class="comparison-card">
+                                <div class="comp-col comp-problem">
+                                    <span class="comp-badge status-bad">Invisible localement</span>
+                                    <p>Aucune optimisation locale sur les moteurs de recherche, laissant vos concurrents capter vos clients proches.</p>
+                                </div>
+                                <div class="comp-col comp-solution">
+                                    <span class="comp-badge status-good">Optimisation SEO</span>
+                                    <p>Base technique optimisée pour le référencement local et liaison Google Business Profile.</p>
+                                </div>
+                            </div>
+                            <div class="comparison-card">
+                                <div class="comp-col comp-problem">
+                                    <span class="comp-badge status-bad">Abonnements captifs</span>
+                                    <p>Des engagements sur 24 mois avec frais administratifs et coûts de modification cachés.</p>
+                                </div>
+                                <div class="comp-col comp-solution">
+                                    <span class="comp-badge status-good">Liberté totale</span>
+                                    <p>Vous êtes propriétaire à 100% de votre site. Aucun abonnement obligatoire ni mauvaise surprise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— Services</span>
+                    <h2 class="section-title">Nos formules pour <strong>professionnels de santé</strong></h2>
+                </header>
+                <div class="services-grid">
+                    
+    <div class="service-card reveal" style="transition-delay: .0s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></div>
+        <h3>Présentation du cabinet</h3>
+        <p>Un design épuré et rassurant qui met en valeur votre pratique, votre espace de consultation et votre approche.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay: .5s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+        <h3>Prise de RDV simplifiée</h3>
+        <p>Intégration fluide de vos plateformes de réservation existantes (Doctolib, Calendly) pour transformer les visites en consultations.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay: .10s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></div>
+        <h3>Fiches Pratiques</h3>
+        <p>Des pages dédiées pour expliquer clairement vos spécialités, le déroulement d'une séance et les tarifs.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay: .15s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+        <h3>Visibilité Locale</h3>
+        <p>Optimisation de votre présence sur Google (SEO local) pour être trouvé facilement par les patients de votre ville.</p>
+    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="realisations">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— Exemples</span>
+                    <h2 class="section-title">Exemples de <strong>sites web sectoriels</strong></h2>
+                    <p class="section-desc-light">Découvrez des exemples de sites conçus pour vous aider à vous projeter. Il s'agit de démonstrations interactives ou de projets clients réalisés pour illustrer la structure et le rendu de votre futur site. Vous pouvez lancer un aperçu en direct et tester la navigation.</p>
+                </header>
+                <div class="projects-grid">
+                    
+    <article class="project-card reveal" style="transition-delay: .0s">
+        <div class="project-header">
+            <span class="project-category">Santé / Bien-être</span>
+            <div style="display:inline-block; margin-bottom:12px; background:rgba(255, 204, 0, 0.15); color:#d97706; padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">Maquette de démonstration</div>
+            <h3>Solenne Billet — Ostéopathe</h3>
+            <span class="project-location">Saint-Hilaire-de-Riez</span>
+        </div>
+        <div class="project-tags"><span class="project-tag">Cabinet</span><span class="project-tag">Prise de RDV</span><span class="project-tag">Conseils</span></div>
+        <p class="project-desc-short">Un site épuré et rassurant pour un cabinet d'ostéopathie. Prise de rendez-vous en ligne, présentation de la pratique et fiches conseils santé.</p>
+        <button class="btn btn-primary demo-launch-btn" data-url="exemples/solenne-billet/index.html" data-name="Solenne Billet — Ostéopathe">Lancer la démo interactive</button>
+    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="method-section" id="methode">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— Accompagnement</span>
+                    <h2 class="section-title">Un accompagnement simple, <strong>pas à pas</strong></h2>
+                </header>
+                <div class="method-steps">
+                    <div class="method-step reveal"><div class="step-num-circle">01</div><h3>Échange</h3><p>Analyse de votre activité, de vos prestations et définition de vos objectifs de contact.</p></div>
+                    <div class="method-step reveal" style="transition-delay: .1s"><div class="step-num-circle">02</div><h3>Structure</h3><p>Création de l'arborescence, rédaction des textes clés et définition des boutons d'action.</p></div>
+                    <div class="method-step reveal" style="transition-delay: .2s"><div class="step-num-circle">03</div><h3>Création</h3><p>Design épuré sur mesure, intégration responsive mobile et optimisations techniques.</p></div>
+                    <div class="method-step reveal" style="transition-delay: .3s"><div class="step-num-circle">04</div><h3>Mise en ligne</h3><p>Configuration du domaine, indexation sur Google (SEO local) et publication finale.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— FAQ</span>
+                    <h2 class="section-title">Questions <strong>fréquentes</strong></h2>
+                </header>
+                <div class="faq-accordion reveal">
+
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Comment intégrez-vous la prise de RDV type Doctolib ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Nous ajoutons des boutons d'appel à l'action stratégiques sur votre site qui redirigent directement vers votre profil Doctolib, Maiia ou Calendly. Cela fluidifie le parcours patient et augmente vos réservations.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Le site respecte-t-il la déontologie médicale ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Oui. Nos sites pour professionnels de santé sont sobres, informatifs et conformes aux recommandations de l'Ordre concernant la communication numérique (pas de publicité outrancière, informations claires et objectives).</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Combien de temps faut-il pour créer le site de mon cabinet ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>En moyenne 2 à 4 semaines. Ce temps nous permet de bien structurer la présentation de vos spécialités et de vous aider à rédiger des textes qui informent et rassurent vos patients.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Puis-je modifier mes horaires ou mes tarifs moi-même ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Absolument. Votre site est conçu pour être simple à mettre à jour. Vous pourrez facilement modifier vos horaires, ajouter un nouveau collaborateur ou mettre à jour les tarifs de vos consultations.</p></div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta-section">
+            <div class="hero-grain"></div>
+            <div class="wrap">
+                <div class="final-cta-content reveal">
+                    <h2>Prêt à donner une <strong>meilleure image</strong> à votre activité en ligne ?</h2>
+                    <p>Expliquez-nous votre projet. Nous vous répondrons sous 24 heures ouvrées avec une première analyse gratuite et une estimation adaptée à vos besoins.</p>
+                    <div class="final-cta-actions">
+                        <a href="#contact" class="btn btn-primary">Parler de mon projet</a>
+                        <a href="#realisations" class="btn btn-secondary">Voir les exemples</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="wrap">
+                <div class="contact-grid">
+                    <div class="contact-info-block reveal">
+                        <span class="section-label">— Contact</span>
+                        <h2 class="section-title">Parler de <strong>votre projet</strong></h2>
+                        <p class="contact-desc-text">Besoin d'une création de site vitrine, d'une refonte ou d'améliorer votre visibilité locale ? Remplissez ce formulaire et nous ferons le point ensemble sous 24h.</p>
+                        
+                        <div class="reassurance-cards">
+                            <div class="reassurance-card"><div class="reassurance-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div class="reassurance-body"><h4>Réponse en 24h</h4><p>Une analyse de vos besoins et une première estimation sous 24 heures ouvrées.</p></div></div>
+                            <div class="reassurance-card"><div class="reassurance-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 17 22 12"></polyline></svg></div><div class="reassurance-body"><h4>Estimation gratuite</h4><p>Étude approfondie de votre projet sans frais ni engagement pour vous lancer en toute confiance.</p></div></div>
+                            <div class="reassurance-card"><div class="reassurance-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div><div class="reassurance-body"><h4>Propriété à 100%</h4><p>Aucun abonnement récurrent captif. Vous restez propriétaire de vos fichiers et de votre domaine.</p></div></div>
+                        </div>
+                        
+                        <a href="mailto:robin.peyrat11@gmail.com" class="contact-email-link">robin.peyrat11@gmail.com</a>
+                        
+                        <div class="contact-status-bar">
+                            <span class="avail"><span class="avail-dot"></span>Disponible pour de nouveaux projets</span>
+                        </div>
+                    </div>
+ 
+                    <div class="contact-form-block reveal" style="transition-delay: .15s">
+                        <form id="contactForm" class="contact-form" autocomplete="on" action="https://formsubmit.co/robin.peyrat11@gmail.com" method="POST">
+                            <div class="form-row">
+                                <div class="form-group"><label for="clientName">Votre nom *</label><input type="text" id="clientName" name="name" required placeholder="Ex. Jean Dupont" autocomplete="name"></div>
+                                <div class="form-group"><label for="clientEmail">Adresse email *</label><input type="email" id="clientEmail" name="email" required placeholder="Ex. jean@dupont.fr" autocomplete="email"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label for="clientPhone">Téléphone</label><input type="tel" id="clientPhone" name="phone" placeholder="Ex. 06 12 34 56 78" autocomplete="tel"></div>
+                                <div class="form-group"><label for="clientSector">Secteur d'activité</label><input type="text" id="clientSector" name="sector" placeholder="Ex. Électricien, Avocat, Restaurateur..." autocomplete="organization-title"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Type de projet *</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled selected>Sélectionnez une option</option>
+                                    <option value="creation">Création de site vitrine</option>
+                                    <option value="refonte">Refonte de site existant</option>
+                                    <option value="restaurant">Site pour restaurant</option>
+                                    <option value="avocat">Site pour cabinet d'avocat</option>
+                                    <option value="praticien">Site pour ostéopathe / praticien</option>
+                                    <option value="artisan">Site pour artisan local</option>
+                                    <option value="autre">Autre projet web</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientMessage">Votre message *</label>
+                                <textarea id="clientMessage" name="message" rows="5" required placeholder="Décrivez brièvement votre activité et ce que vous attendez de votre futur site web (ex: recevoir des demandes de devis, afficher un menu interactif, intégrer une prise de rendez-vous)..." autocomplete="off"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Envoyer ma demande</span>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style="margin-left: 8px;"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </button>
+                            <p class="form-reassurance">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: var(--accent); flex-shrink: 0;"><path d="M6 1C3.24 1 1 3.24 1 6C1 8.76 3.24 11 6 11C8.76 11 11 8.76 11 6C11 3.24 8.76 1 6 1ZM5 8L3 6L3.71 5.29L5 6.58L8.29 3.29L9 4L5 8Z" fill="currentColor"/></svg>
+                                <span>Analyse gratuite &amp; réponse sous 24h ouvrées</span>
+                            </p>
+                        </form>
+                        <div id="formSuccessMessage" class="form-success-alert" aria-hidden="true">
+                            <div class="success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            <h3>Demande reçue !</h3>
+                            <p>Merci pour votre message. Nous étudions votre demande avec attention et vous recontactons sous 24h ouvrées avec une première analyse personnalisée.</p>
+                            <button type="button" class="btn btn-primary" id="closeSuccessBtn">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="siteSimulator" class="simulator-overlay" aria-hidden="true">
+        <div class="simulator-header">
+            <div class="simulator-info">
+                <span class="simulator-dot-decor"></span><span id="simulatorProjectName" class="simulator-title">Projet Démo</span>
+            </div>
+            <div class="simulator-controls">
+                <button class="sim-view-btn active" data-width="100%">Bureau</button><button class="sim-view-btn" data-width="768px">Tablette</button><button class="sim-view-btn" data-width="375px">Mobile</button>
+            </div>
+            <div class="simulator-actions">
+                <a href="#" target="_blank" id="simulatorExternalLink" class="btn btn-secondary sim-action-btn">Ouvrir l'onglet ↗</a>
+                <button id="closeSimulatorBtn" class="btn btn-primary sim-action-btn">Quitter ×</button>
+            </div>
+        </div>
+        <div class="simulator-body">
+            <div class="iframe-container" id="iframeContainer"><iframe id="simulatorIframe" src="" title="Prévisualisation live du site" loading="lazy"></iframe></div>
+        </div>
+    </div>
+ 
+    <footer class="site-footer">
+        <div class="wrap footer-content-wrap">
+            <div class="footer-top-grid">
+                <div class="footer-brand-info">
+                    <span class="footer-brand">
+                        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M6 22C6 16.48 10.48 12 16 12C21.52 12 26 16.48 26 22H6Z" fill="url(#logo-grad-footer)" />
+                            <path d="M2 24H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="logo-grad-footer" x1="6" y1="12" x2="26" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-gold)"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        Studio Horizon.
+                    </span>
+                    <p class="footer-desc">Studio de création web spécialisé pour les indépendants et les commerces locaux. Des sites simples, clairs et orientés conversion.</p>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#services">Nos services</a></li><li><a href="#realisations">Exemples de sites</a></li><li><a href="#methode">Méthode</a></li><li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#contact">Prendre contact</a></li><li><a href="#">Mentions légales</a></li><li><a href="#">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-col">
+                    <h4>Nous contacter</h4>
+                    <p>contact@studiohorizon.fr</p><p>Paris &amp; France entière</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Studio Horizon. Tous droits réservés.</p>
+                <div class="footer-bottom-links"><span>Création de sites web pour professionnels</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

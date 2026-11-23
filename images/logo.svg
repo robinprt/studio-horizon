@@ -1,0 +1,10 @@
+<svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 22C6 16.48 10.48 12 16 12C21.52 12 26 16.48 26 22H6Z" fill="url(#logo-grad)" />
+    <path d="M2 24H30" stroke="#191e4f" stroke-width="2.5" stroke-linecap="round" />
+    <defs>
+        <linearGradient id="logo-grad" x1="6" y1="12" x2="26" y2="22" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#0055ff"/>
+            <stop offset="1" stop-color="#00d2ff"/>
+        </linearGradient>
+    </defs>
+</svg>
