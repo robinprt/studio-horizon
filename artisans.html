@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de site web pour Artisans à Nantes et en Vendée | Studio Horizon</title>
+    <meta name="description" content="Sites vitrines pour artisans : photos de réalisations, zone d'intervention, appel et demande de devis en un clic. À partir de 300 €.">
+    <meta property="og:title" content="Création de site web pour Artisans | Studio Horizon">
+    <meta property="og:description" content="Sites vitrines pour artisans : photos de réalisations, zone d'intervention, appel et demande de devis en un clic. À partir de 300 €.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="grid-lines" aria-hidden="true">
+        <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+    </div>
+    <div class="bg-glow-orbs" aria-hidden="true">
+        <div class="glow-orb orb-1"></div><div class="glow-orb orb-2"></div><div class="glow-orb orb-3"></div>
+    </div>
+    <div class="preloader" id="preloader">
+        <span class="preloader-text">Studio Horizon</span>
+        <div class="preloader-bar"><div class="preloader-fill" id="preloaderFill"></div></div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <header class="nav" id="nav">
+        <a href="#hero" class="nav-brand">
+            <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 22C6 16.48 10.48 12 16 12C21.52 12 26 16.48 26 22H6Z" fill="url(#logo-grad-header)" />
+                <path d="M2 24H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                <defs>
+                    <linearGradient id="logo-grad-header" x1="6" y1="12" x2="26" y2="22" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-gold)"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span>Horizon.</span>
+        </a>
+        <div class="nav-links">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#realisations" class="nav-link">Exemples</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <a href="#contact" class="nav-cta" id="headerCtaBtn">
+            <span>Parler de mon projet</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+        </a>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-grain"></div><div class="hero-glow"></div>
+            <canvas id="heroGridCanvas" class="hero-grid-canvas" aria-hidden="true"></canvas>
+            <div class="hero-blobs-container" aria-hidden="true">
+                <div class="hero-blob blob-cyan"></div><div class="hero-blob blob-blue"></div><div class="hero-blob blob-purple"></div><div class="hero-blob blob-left"></div>
+            </div>
+            <div class="hero-top">
+                <span class="hero-eyebrow"><span class="eyebrow-line"></span>PLUS DE DEMANDES DE DEVIS</span>
+            </div>
+            <div class="hero-center">
+                <h1 class="hero-title" id="heroTitle">
+        <span class="hero-line">
+            <span class="word-wrap"><span class="word">Un</span></span>
+            <span class="word-wrap"><span class="word">site</span></span>
+            <span class="word-wrap"><span class="word italic">simple</span></span>
+        </span>
+        <span class="hero-line">
+            <span class="word-wrap"><span class="word">qui</span></span>
+            <span class="word-wrap"><span class="word">fait</span></span>
+            <span class="word-wrap"><span class="word italic">sonner</span></span>
+        </span>
+        <span class="hero-line">
+            <span class="word-wrap"><span class="word">votre</span></span>
+            <span class="word-wrap"><span class="word">téléphone.</span></span>
+        </span>
+    </h1>
+                <p class="hero-sub">Pour les plombiers, électriciens, menuisiers, couvreurs et tous les artisans : vos réalisations en photos, votre zone d'intervention et un bouton pour demander un devis. En ligne en une semaine.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Recevoir une estimation gratuite</a>
+                    <a href="#realisations" class="btn btn-secondary">Voir les exemples de sites</a>
+                </div>
+            </div>
+            <div class="hero-proofs">
+                <div class="wrap">
+                    <div class="proofs-grid">
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                            <span>Parfaitement lisible sur mobile</span>
+                        </div>
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            <span>Optimisé pour le référencement local</span>
+                        </div>
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>Aucun abonnement caché</span>
+                        </div>
+                        <div class="proof-item">
+                            <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                            <span>Sites à partir de 300 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="constat-section" id="approche">
+            <div class="wrap">
+                <div class="constat-grid">
+                    <div class="constat-left reveal">
+                        <span class="section-label">— Constat &amp; Approche</span>
+                        <h2 class="section-title">Pourquoi un particulier <strong>appelle votre concurrent</strong> ?</h2>
+                        <p class="section-desc">Quand on a une fuite ou un chantier, on compare deux ou trois artisans sur Google avant d'appeler. On regarde les photos de réalisations, la zone d'intervention et les avis. Sans site, vous n'êtes pas dans la comparaison.</p>
+                        <p class="section-desc">Votre site montre votre travail, rassure et fait arriver les demandes de devis directement sur votre téléphone.</p>
+                    </div>
+                    <div class="constat-right reveal" style="transition-delay: .15s">
+                        <div class="comparison-cards">
+                            <div class="comparison-card">
+                                <div class="comp-col comp-problem">
+                                    <span class="comp-badge status-bad">Erreurs classiques</span>
+                                    <p>Un site lent, surchargé d'informations inutiles, illisible sur mobile et sans appel à l'action visible.</p>
+                                </div>
+                                <div class="comp-col comp-solution">
+                                    <span class="comp-badge status-good">Notre standard</span>
+                                    <p>Design épuré, performances ultra-rapides, parcours pensé mobile-first et conversion directe.</p>
+                                </div>
+                            </div>
+                            <div class="comparison-card">
+                                <div class="comp-col comp-problem">
+                                    <span class="comp-badge status-bad">Invisible localement</span>
+                                    <p>Aucune optimisation locale sur les moteurs de recherche, laissant vos concurrents capter vos clients proches.</p>
+                                </div>
+                                <div class="comp-col comp-solution">
+                                    <span class="comp-badge status-good">Optimisation SEO</span>
+                                    <p>Base technique optimisée pour le référencement local et liaison Google Business Profile.</p>
+                                </div>
+                            </div>
+                            <div class="comparison-card">
+                                <div class="comp-col comp-problem">
+                                    <span class="comp-badge status-bad">Abonnements captifs</span>
+                                    <p>Des engagements sur 24 mois avec frais administratifs et coûts de modification cachés.</p>
+                                </div>
+                                <div class="comp-col comp-solution">
+                                    <span class="comp-badge status-good">Liberté totale</span>
+                                    <p>Vous êtes propriétaire à 100% de votre site. Aucun abonnement obligatoire ni mauvaise surprise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— Services</span>
+                    <h2 class="section-title">Nos solutions pour <strong>artisans</strong></h2>
+                </header>
+                <div class="services-grid">
+    <div class="service-card reveal" style="transition-delay: .0s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg></div>
+        <h3>Vos réalisations en photos</h3>
+        <p>Une galerie avant / après qui montre la qualité de votre travail mieux que n'importe quel discours.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay: .5s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+        <h3>Appel et devis en un clic</h3>
+        <p>Un bouton pour vous appeler et un formulaire de demande de devis qui arrive directement sur votre téléphone.</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay: .10s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+        <h3>Zone d'intervention claire</h3>
+        <p>Les villes où vous intervenez, bien visibles pour Google et pour vos clients, afin d'apparaître dans les recherches « métier + ville ».</p>
+    </div>
+    <div class="service-card reveal" style="transition-delay: .15s">
+        <div class="service-icon-wrapper"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <h3>Avis et fiche Google</h3>
+        <p>Votre fiche Google Business créée ou complétée et reliée au site, avec vos avis clients mis en avant.</p>
+    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="realisations">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— Exemples</span>
+                    <h2 class="section-title">Voir avant de <strong>décider</strong></h2>
+                    <p class="section-desc-light">Pas encore de site artisan à vous montrer dans votre métier ? On vous prépare le vôtre en maquette, gratuitement.</p>
+                </header>
+                <div class="projects-grid">
+    <article class="project-card reveal" style="transition-delay: .0s">
+        <div class="project-header">
+            <span class="project-category">Votre future vitrine</span>
+            <div style="display:inline-block; margin-bottom:12px; background:rgba(0, 85, 255, 0.12); color:#0055ff; padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">Offert</div>
+            <h3>Votre maquette gratuite</h3>
+            <span class="project-location">Nantes &amp; Vendée</span>
+        </div>
+        <div class="project-tags"><span class="project-tag">Sans engagement</span><span class="project-tag">48 h</span></div>
+        <p class="project-desc-short">Envoyez-nous le nom de votre entreprise : nous préparons une maquette de votre page d'accueil avec vos couleurs et vos photos, avant que vous ne décidiez quoi que ce soit.</p>
+        <a class="btn btn-primary" href="#contact">Demander ma maquette</a>
+    </article>
+    <article class="project-card reveal" style="transition-delay: .5s">
+        <div class="project-header">
+            <span class="project-category">Commerce local</span>
+            <div style="display:inline-block; margin-bottom:12px; background:rgba(16, 185, 129, 0.15); color:#059669; padding:4px 8px; border-radius:4px; font-size:12px; font-weight:600;">Site Client Officiel</div>
+            <h3>Crêperie Le Récif</h3>
+            <span class="project-location">Saint-Gilles-Croix-de-Vie</span>
+        </div>
+        <div class="project-tags"><span class="project-tag">Vitrine</span><span class="project-tag">Local</span><span class="project-tag">En ligne</span></div>
+        <p class="project-desc-short">Un site vitrine rapide pour un commerce local : photos, horaires, appel en un clic et fiche Google reliée.</p>
+        <button class="btn btn-primary demo-launch-btn" data-url="exemples/le-recif/index.html" data-name="Crêperie Le Récif">Voir le site</button>
+    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="method-section" id="methode">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— Accompagnement</span>
+                    <h2 class="section-title">Un accompagnement simple, <strong>pas à pas</strong></h2>
+                </header>
+                <div class="method-steps">
+                    <div class="method-step reveal"><div class="step-num-circle">01</div><h3>Échange</h3><p>Analyse de votre activité, de vos prestations et définition de vos objectifs de contact.</p></div>
+                    <div class="method-step reveal" style="transition-delay: .1s"><div class="step-num-circle">02</div><h3>Structure</h3><p>Création de l'arborescence, rédaction des textes clés et définition des boutons d'action.</p></div>
+                    <div class="method-step reveal" style="transition-delay: .2s"><div class="step-num-circle">03</div><h3>Création</h3><p>Design épuré sur mesure, intégration responsive mobile et optimisations techniques.</p></div>
+                    <div class="method-step reveal" style="transition-delay: .3s"><div class="step-num-circle">04</div><h3>Mise en ligne</h3><p>Configuration du domaine, indexation sur Google (SEO local) et publication finale.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="wrap">
+                <header class="section-head reveal">
+                    <span class="section-label">— FAQ</span>
+                    <h2 class="section-title">Questions <strong>fréquentes</strong></h2>
+                </header>
+                <div class="faq-accordion reveal">
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Je n'ai pas le temps de m'en occuper, comment ça se passe ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Nous faisons tout. Il nous faut seulement quelques photos de vos chantiers, vos horaires et votre zone d'intervention. Un appel de 15 minutes suffit pour le reste.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Les demandes de devis arrivent où ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Directement dans votre boîte mail, et en notification sur votre téléphone si vous le souhaitez. Vous ne ratez plus les demandes du soir et du week-end.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Combien de temps faut-il pour avoir mon site en ligne ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Environ une semaine après réception de vos contenus (textes, photos, logo). Nous vous guidons pour les rassembler rapidement.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Vais-je apparaître sur Google ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Oui. Le site est construit pour les recherches « métier + ville » et relié à votre fiche Google Business, là où les particuliers comparent les artisans.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-question"><span>Combien coûte un site ?</span><span class="faq-icon-arrow"></span></summary>
+                        <div class="faq-answer"><p>Un site vitrine de 3 pages démarre à 300 €, nom de domaine et hébergement de la première année compris. Vous payez 50 % à la commande et 50 % à la mise en ligne. Pas d'abonnement obligatoire.</p></div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta-section">
+            <div class="hero-grain"></div>
+            <div class="wrap">
+                <div class="final-cta-content reveal">
+                    <h2>Prêt à donner une <strong>meilleure image</strong> à votre activité en ligne ?</h2>
+                    <p>Expliquez-nous votre projet. Nous vous répondons sous 24 heures ouvrées avec une maquette gratuite de votre page d'accueil. Sites vitrines à partir de 300 €.</p>
+                    <div class="final-cta-actions">
+                        <a href="#contact" class="btn btn-primary">Parler de mon projet</a>
+                        <a href="#realisations" class="btn btn-secondary">Voir les exemples</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="wrap">
+                <div class="contact-grid">
+                    <div class="contact-info-block reveal">
+                        <span class="section-label">— Contact</span>
+                        <h2 class="section-title">Parler de <strong>votre projet</strong></h2>
+                        <p class="contact-desc-text">Besoin d'une création de site vitrine, d'une refonte ou d'améliorer votre visibilité locale ? Remplissez ce formulaire et nous ferons le point ensemble sous 24h.</p>
+                        
+                        <div class="reassurance-cards">
+                            <div class="reassurance-card"><div class="reassurance-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div class="reassurance-body"><h4>Réponse en 24h</h4><p>Une analyse de vos besoins et une première estimation sous 24 heures ouvrées.</p></div></div>
+                            <div class="reassurance-card"><div class="reassurance-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 17 22 12"></polyline></svg></div><div class="reassurance-body"><h4>Estimation gratuite</h4><p>Étude approfondie de votre projet sans frais ni engagement pour vous lancer en toute confiance.</p></div></div>
+                            <div class="reassurance-card"><div class="reassurance-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div><div class="reassurance-body"><h4>Propriété à 100%</h4><p>Aucun abonnement récurrent captif. Vous restez propriétaire de vos fichiers et de votre domaine.</p></div></div>
+                        </div>
+                        
+                        <a href="mailto:robin.peyrat11@gmail.com" class="contact-email-link">robin.peyrat11@gmail.com</a>
+                        
+                        <div class="contact-status-bar">
+                            <span class="avail"><span class="avail-dot"></span>Disponible pour de nouveaux projets</span>
+                        </div>
+                    </div>
+ 
+                    <div class="contact-form-block reveal" style="transition-delay: .15s">
+                        <form id="contactForm" class="contact-form" autocomplete="on" action="https://formsubmit.co/robin.peyrat11@gmail.com" method="POST">
+                            <div class="form-row">
+                                <div class="form-group"><label for="clientName">Votre nom *</label><input type="text" id="clientName" name="name" required placeholder="Ex. Jean Dupont" autocomplete="name"></div>
+                                <div class="form-group"><label for="clientEmail">Adresse email *</label><input type="email" id="clientEmail" name="email" required placeholder="Ex. jean@dupont.fr" autocomplete="email"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label for="clientPhone">Téléphone</label><input type="tel" id="clientPhone" name="phone" placeholder="Ex. 06 12 34 56 78" autocomplete="tel"></div>
+                                <div class="form-group"><label for="clientSector">Secteur d'activité</label><input type="text" id="clientSector" name="sector" placeholder="Ex. Électricien, Avocat, Restaurateur..." autocomplete="organization-title"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Type de projet *</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled selected>Sélectionnez une option</option>
+                                    <option value="creation">Création de site vitrine</option>
+                                    <option value="refonte">Refonte de site existant</option>
+                                    <option value="restaurant">Site pour restaurant</option>
+                                    <option value="avocat">Site pour cabinet d'avocat</option>
+                                    <option value="praticien">Site pour ostéopathe / praticien</option>
+                                    <option value="artisan">Site pour artisan local</option>
+                                    <option value="autre">Autre projet web</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientMessage">Votre message *</label>
+                                <textarea id="clientMessage" name="message" rows="5" required placeholder="Décrivez brièvement votre activité et ce que vous attendez de votre futur site web (ex: recevoir des demandes de devis, afficher un menu interactif, intégrer une prise de rendez-vous)..." autocomplete="off"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Envoyer ma demande</span>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style="margin-left: 8px;"><path d="M1 13L13 1M13 1H3M13 1V11" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </button>
+                            <p class="form-reassurance">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: var(--accent); flex-shrink: 0;"><path d="M6 1C3.24 1 1 3.24 1 6C1 8.76 3.24 11 6 11C8.76 11 11 8.76 11 6C11 3.24 8.76 1 6 1ZM5 8L3 6L3.71 5.29L5 6.58L8.29 3.29L9 4L5 8Z" fill="currentColor"/></svg>
+                                <span>Analyse gratuite &amp; réponse sous 24h ouvrées</span>
+                            </p>
+                        </form>
+                        <div id="formSuccessMessage" class="form-success-alert" aria-hidden="true">
+                            <div class="success-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            <h3>Demande reçue !</h3>
+                            <p>Merci pour votre message. Nous étudions votre demande avec attention et vous recontactons sous 24h ouvrées avec une première analyse personnalisée.</p>
+                            <button type="button" class="btn btn-primary" id="closeSuccessBtn">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="siteSimulator" class="simulator-overlay" aria-hidden="true">
+        <div class="simulator-header">
+            <div class="simulator-info">
+                <span class="simulator-dot-decor"></span><span id="simulatorProjectName" class="simulator-title">Projet Démo</span>
+            </div>
+            <div class="simulator-controls">
+                <button class="sim-view-btn active" data-width="100%">Bureau</button><button class="sim-view-btn" data-width="768px">Tablette</button><button class="sim-view-btn" data-width="375px">Mobile</button>
+            </div>
+            <div class="simulator-actions">
+                <a href="#" target="_blank" id="simulatorExternalLink" class="btn btn-secondary sim-action-btn">Ouvrir l'onglet ↗</a>
+                <button id="closeSimulatorBtn" class="btn btn-primary sim-action-btn">Quitter ×</button>
+            </div>
+        </div>
+        <div class="simulator-body">
+            <div class="iframe-container" id="iframeContainer"><iframe id="simulatorIframe" src="" title="Prévisualisation live du site" loading="lazy"></iframe></div>
+        </div>
+    </div>
+ 
+    <footer class="site-footer">
+        <div class="wrap footer-content-wrap">
+            <div class="footer-top-grid">
+                <div class="footer-brand-info">
+                    <span class="footer-brand">
+                        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M6 22C6 16.48 10.48 12 16 12C21.52 12 26 16.48 26 22H6Z" fill="url(#logo-grad-footer)" />
+                            <path d="M2 24H30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="logo-grad-footer" x1="6" y1="12" x2="26" y2="22" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="var(--accent)"/><stop offset="1" stop-color="var(--accent-gold)"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        Studio Horizon.
+                    </span>
+                    <p class="footer-desc">Studio de création web à Nantes et en Vendée, pour les indépendants et les commerces locaux. Des sites simples, clairs et orientés conversion.</p>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#services">Nos services</a></li><li><a href="#realisations">Exemples de sites</a></li><li><a href="#methode">Méthode</a></li><li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="#contact">Prendre contact</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="mentions-legales.html#confidentialite">Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Métiers</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li><li><a href="restauration.html">Restaurants</a></li><li><a href="artisans.html">Artisans</a></li><li><a href="medical.html">Santé</a></li><li><a href="cabinets.html">Cabinets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-col">
+                    <h4>Nous contacter</h4>
+                    <p>robin.peyrat11@gmail.com</p><p>Nantes, Vendée &amp; à distance</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Studio Horizon. Tous droits réservés.</p>
+                <div class="footer-bottom-links"><span>Création de sites web pour professionnels</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
